@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>chavy</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<style>
+		header#header{width: 1100px;height: 50px;margin: 0 auto;background: skyblue;padding-top: 10px;}
+		.box{width: 100px;height: 10px;background-color: red;margin-bottom: 10px;}
+		.box1{width: 100px;height: 10px;background-color: blue;}
+		.visual{}
+		.visual .view{position: relative;height: 500px;width: 1100px;margin: 0 auto;}
+		.visual .slider>li{overflow:hidden;}
+		.visual .slider img.img{position: absolute;left: 20%}
+		.visual .visualtxt{position: absolute;top: 150px;width: 500px;_background-color: red;}
+		.visual .visualtxt h3{font-size: 2.5em;margin-bottom: 20px;}
+		.visual .visualtxt p{margin-bottom: 30px;}
+		.visual .visualtxt a{display: block;width: 200px;height: 60px;background: skyblue;color: white;border-radius: 40px;text-align: center;line-height: 60px;}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('.slider').bxSlider();
+		});
+	</script>
+</head>
+
+<body>
+	<header id="header"> 
+		<!-- 마진톱값, 첫 레이어에다가 왠만하면 쓰지 말기(에러있음, 같이 컬러넣고 확인해보기) //패팅돕으로 해주기 -->
+		<div class="box"></div>
+		<div class="box1"></div>	
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li> <!-- w100% -->
+				<div class="view">
+					<img src="images/bg_nowords.png" alt="" class="img">
+					<div class="visualtxt">
+						<h3>Lorem ipsum dolor sit amet, consectetur!</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestiae odit magni hic.</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li> <!-- w100% -->
+				<div class="view">
+					<img src="images/bg_nowords.png" alt="" class="img">
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

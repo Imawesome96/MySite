@@ -6,88 +6,309 @@
 	<title>Chavy</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.slider').bxSlider({
-				auto:true,
 				controls:false,
-				pagerCustom:".bx-pager"
+				auto:false
 			});
 		});
 	</script>
+	<script>
+		new WOW().init();
+	</script>
 	<style>
+
+		.bx-wrapper{
+	      -moz-box-shadow:none;
+	      -webkit-box-shadow:none;
+	      box-shadow: none;
+	      border: 0 none;
+	      }
+	      .bx-wrapper .bx-pager{
+	      bottom: 20px;
+	      }
 		/*header*/
-		.Header{width: 100%;height: 65px;background-color: skyblue;margin-top: 30px;margin-bottom: 20px;}
-		.TOPmenu{width: 1220px;background-color: white;margin: 0 auto;position: relative;}
-		.TOPmenu>h1{width: 150px;background-color: pink;line-height: 65px;
+		.Header{width: 100%;height: 65px;/*background-color: skyblue;*/margin-top: 30px;margin-bottom: 20px;}
+		.TOPmenu{width: 1220px;/*background-color: white;*/margin: 0 auto;position: relative;}
+		.TOPmenu>h1{width: 150px;/*background-color: pink;*/line-height: 65px;
 				font-size: 3em;text-align: center;}
-		.logoR{width: 600px;background-color: magenta;line-height: 65px;}
-		.logoRR{width: 300px;background-color: red;line-height: 65px;}
+		.logoR{width: 600px;/*background-color: magenta;*/line-height: 65px;font-weight: bold}
+		.logoRR{width: 300px;/*background-color: red;*/line-height: 65px;font-weight: bold}
 		.logoR>ul:after{content: "";display: block;clear: both;}
 		.logoR>ul>li{float: left;width: 150px;}
+		.logoR>ul>li>a:hover{background: #999;display: block;font-weight: bold;color: white}
 		.logoRR>ul:after{content: "";display: block;clear: both;}
 		.logoRR>ul>li{float:left;width: 150px;}
+		.logoRR>ul>li>a:hover{background: #999;display: block;font-weight: bold;color: white}
 		nav.LOGO{position: absolute;right: 0;top: 0;text-align: center;}
 		nav.logoR, nav.logoRR{float: left;}
 		nav.logoR{margin-right: 30px;}
-		/*bxSlider*/
-		.bxSlider{width: 1300px;/*margin-left: 650px*/margin:0 auto}
-		.bx-pager{display: none;}
-		.bx-wrapper{
-		-moz-box-shadow: none;
-	    -webkit-box-shadow: none;
-	    box-shadow: none;
-	    border: 0 none;
-	    margin-bottom: 0;
-		}
+
+		/*bxSlider*//*-jquery.bxslider.css 7쨰라인 마진값없앴음*/
+		.visual{}
+		.visual .view{position: relative;width: 1220px;height: 600px;margin:0 auto;}
+		.visual .slider>li{overflow: hidden;}
+		.visual .slider img.img{position: absolute; left: 20%;}
+		.visual .visualtxt{position: absolute;top: 150px;width: 500px;}
+		.visual .visualtxt h3{font-size: 2.5em;margin-bottom: 20px;}
+		.visual .visualtxt p{margin-bottom: 30px;}
+		.visual .visualtxt a{display: block;width: 200px;height: 60px;background: #2c2c96;color: white;border-radius: 40px;text-align: center;line-height: 60px;}
+
 		/*SaveM*/
 		.SaveM{height: 280px;width: 100%;background-color: #f8f9ff;}
-		.SaveM .txt{width: 900px;margin: 0 auto;background-color: pink;}
+		.SaveM .txt{margin: 0 auto;_background-color: pink;width: 700px;height: 150px;text-align: center;padding-top: 70px;}
+		.SaveM .txt h1{font-size: 2.5em;margin-bottom: 40px;}
+		
+		/*box*/
+		.box{height: 740px;background: #fff;}
+		.box1{height: 550px;background: #fff;margin-top: 190px;position: relative;}
+		.box1 .txt{width: 500px;background: #fff;position: absolute;right: 50%;margin-right: 100px;top: 25%}
+		.box1 .txt>h3{font-size: 1.7em;margin-bottom: 30px;}
+		.box1 .txt>p{margin-bottom: 40px;}
+		.box1 .txt>a{display: block;width: 200px;height: 60px;background: #2c2c96;color: white;border-radius: 40px;text-align: center;line-height: 60px;}
+
+		.BXW{position: absolute;left: 55%;top:100px;}
+		.bxWrap{width: 350px;height: 350px; background: #fff;position: relative;text-align: center;}
+		.bx1, .bx2, .bx3, .bx4{width: 165px;height: 165px;position: absolute;padding:100px 0 0 0;border: 2px solid #f8f9ff;
+							   box-shadow: 1px 1px 5px #F6F6F6}
+		.bx1{background-color: white;}
+		.bx2{background-color: #f8f9ff;right:0}
+		.bx3{background-color: white;left: 0;bottom: 0;}
+		.bx4{background-color: white;right: 0;bottom: 0;}
+
+		/*forthpage*/
+		.forthpage{height: 790px;background: #f8f9ff;}
+		.forthinner{width: 1220px;height: 790px;background: #f8f9ff;margin: 0 auto;position: relative;}
+		.forthinner img.forthpng{position: absolute;right: 0;top: 50px;}
+		.forthinner .txt{background: skyblue;position: absolute;}
+		.forthinner .txt{width: 500px;background: #f8f9ff;position: absolute;right: 50%;margin-right: 100px;top: 25%}
+		.forthinner .txt>h3{font-size: 1.7em;margin-bottom: 30px;}
+		.forthinner .txt>p{margin-bottom: 40px;}
+		.forthinner .txt>a{display: block;width: 200px;height: 60px;background: #2c2c96;color: white;border-radius: 40px;text-align: center;line-height: 60px;}
+
+		/*fifth page*/
+		.fifthpage{height: 400px;width: 100%;}
+		.fifthinner{width: 1220px;height: 400px;/*background: yellow;*/margin: 0 auto;position: relative;}
+		.fifthinner .txt{/*background: red;*/width: 1220px;position: absolute;left: 50%;margin-left: -610px;top: 120px;font-size: 2.7em;text-align: center;font-weight: bold;}
+		.fifthinner .shape1{width: 200px;height: 60px;background: red;position: absolute;top: 60%;right: 50%;background: #2c2c96;border-radius: 40px}		
+		.fifthinner .shape2{width: 200px;height: 60px;background: red;position: absolute;top: 60%;left: 50%;background: #f8f9ff;border-radius: 40px}
+		.fifthinner .shape1 p{text-align: center;font-weight: bold;color: white;line-height: 60px}
+		.fifthinner .shape2 p{text-align: center;font-weight: bold;color: black;line-height: 60px}
+
+		/*sixth page*/
+		.sixthpage{height: 400px;width: 100%;/*background: skyblue;*/}
+		.sixthinner{width: 1220px;height: 400px;/*background: gray;*/margin: 0 auto;position: relative;}
+		.sixthinner .txt{width: 600px;font-size: 2.7em;font-weight: bold;position: absolute;/*background: #ff0;*/left: 320px;top:120px}
+		.sixthinner .txt2{text-align: center;/*background: #ff0;*/width: 600px;position: absolute;left: 300px;bottom: 100px}
+		
+		/*seventh page*/
+		.svnthpage{width: 100%;height: 750px;/*background: pink;*/}
+		.svnthinner{width: 1220px;height: 750px;/*background: skyblue;*/margin: 0 auto;padding: 50px 0 0 0;}
+		.svnthinner .bo1{height: 130px;width: 1220px;/*background: #ff0*/;margin: 0 auto;border-radius: 60px;border: 2px solid #f8f9ff;margin-bottom: 50px;}
+		.svnthinner .bo1 a{line-height: 130px;padding: 0 0 0 100px;font-size: 1.5em;font-weight: bold;}
+		.svnthinner .bo1 img.point{margin-left: 800px;}
+		.svnthinner .bo2{height: 130px;width: 1220px;/*background: #ff0*/;margin: 0 auto;border-radius: 60px;border: 2px solid #f8f9ff;margin-bottom: 50px;box-shadow: 1px 1px 5px gray;}
+		.svnthinner .bo2 a{line-height: 130px;padding: 0 0 0 100px;font-size: 1.5em;font-weight: bold;}
+		.svnthinner .bo2 img.point{margin-left: 650px;}
+		.svnthinner .bo3{height: 130px;width: 1220px;/*background: #ff0*/;margin: 0 auto;border-radius: 60px;border: 2px solid #f8f9ff;margin-bottom: 50px;}
+		.svnthinner .bo3 a{line-height: 130px;padding: 0 0 0 100px;font-size: 1.5em;font-weight: bold;}
+		.svnthinner .bo3 img.point{margin-left: 650px;}
+		.svnthinner .bo4{height: 130px;width: 1220px;/*background: #ff0*/;margin: 0 auto;border-radius: 60px;border: 2px solid #f8f9ff;margin-bottom: 50px;}
+		.svnthinner .bo4 a{line-height: 130px;padding: 0 0 0 100px;font-size: 1.5em;font-weight: bold;}
+		.svnthinner .bo4 img.point{margin-left: 550px;}
+
+		/*eighth page*/
+		.eighthpage{width: 100%;height: 740px;background: #fff;}
+		.eighthinner{width: 1220px;height: 740px;background: #fff;margin: 0 auto;position: relative;}
+		.eighthinner .txt{width: 400px;position: absolute;top: 50%;/*background: #ff0;*/height: 300px;margin-top: -150px}
+		.eighthinner .txt h3{font-size: 1.7em;margin-bottom: 30px;}
+		.eighthinner .txt p{margin-bottom: 40px;}	
+		.eighthinner .txt a{width: 200px;height: 60px;background: #2c2c96;color: white;border-radius: 40px;display: block;text-align: center;line-height: 60px;}
+		.eighthinner img.img{position: absolute;right:-10%;top: -20px}
+
+		/*footer*/
+		.footer{height: 480px;background: #f8f9ff;}
+		.footerinner{width: 1220px;height: 480px;margin: 0 auto;position: relative;}
+		.footerinner .chavy h3{font-size: 3em;margin-bottom: 20px; padding: 150px 0 0 0;}
+		.chavy p{margin-bottom: 50px;}
+		.footerinner .about{width: 100px;height: 200px;position: absolute;right: 400px;top: 200px;}
+		.footerinner .about h4{margin-bottom: 30px;font-size: 1.2em}
+		.footerinner .about p{line-height: 30px;}
+		.footerinner .product{width: 100px;height: 200px;position: absolute;right: 200px;top: 200px;}
+		.footerinner .product h4{margin-bottom: 30px;font-size: 1.2em}
+		.footerinner .product p{line-height: 30px;}
+		.footerinner .company{width: 100px;height: 200px;position: absolute;right: 0;top: 200px;}
+		.footerinner .company h4{margin-bottom: 30px;font-size: 1.2em}
+		.footerinner .company p{line-height: 30px;}
+		.footer .line{height: 1px;background: #c4c4c7;margin-bottom: 30px;}
+		.footer .copyright{position: absolute;bottom: 40px;}
+		.footer .terms{position: absolute;bottom: 40px;right: 200px;}
+		.footer .privacy{position: absolute;bottom: 40px;right: 0}
+
+
 	</style>
 </head>
+
+<body>
+
 	<div class="Header">
 		<div class="TOPmenu">
-			<h1><a href="#">chavy</a></h1>
+			<h1 class="wow zoomIn"data-wow-duration="5s"><a href="#">chavy</a></h1>
 			<nav class="LOGO">
 				<nav class="logoR">
-					<ul>
-						<li>Home</li>
-						<li>How It Works</li>
-						<li>Company</li>
-						<li>Career</li>
+					<ul class="wow zoomIn"data-wow-delay=".5s">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">How It Works</a></li>
+						<li><a href="#">Company</a></li>
+						<li><a href="#">Career</a></li>
 					</ul>
 				</nav>
 				<nav class="logoRR">
-					<ul>
-						<li>Sign In</li>
-						<li>Register</li>
+					<ul class="wow zoomIn"data-wow-delay="1s">
+						<li><a href="#">Sign In</a></li>
+						<li><a href="#">Register</a></li>
 					</ul>
 				</nav>
 			</nav>
 		</div>
 	</div>
 	
-	<div class="bxSlider">
-		<div class="sliderWrap">
-			<ul class="slider">
-				<li>
-					<img src="images/bg_.png" alt="#">
-				</li>				
-				<li>
-					<img src="images/bg_nowords.png" alt="#">
-				</li>
-			</ul>
-		</div>
+	<div class="visual">
+		<ul class="slider">
+			<li>
+				<div class="view">
+					<img src="images/bg_nowords.png" alt="" class="img" >
+					<div class="visualtxt">
+						<h3>Lorem ipsum dolor sit amet, consectetur!</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestiae odit magni hic.</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/pc01.jpg" alt="" class="img">
+					<div class="visualtxt">
+						
+					</div>
+				</div>
+			</li>
+		</ul>
 	</div>
 
 	<div class="SaveM">
 		<div class="txt">
-			<h2>Save money & <span>money will save you.</span></h2>
-			<p>I will tell you how to become a rich. Close the doors. Be fearful<br>when others are greedy.</p>
+			<h1 class="wow fadeInDown"data-wow-delay="1.5s">Save money & <span>money will save you.</span></h1>
+			<p class="wow fadeInUp"data-wow-delay="1.9s">I will tell you how to become a rich. Close the doors. Be fearful<br>when others are greedy.</p>
+		</div>
+	</div>
+
+	<div class="box">
+		<div class="box1">
+			<div class="txt">
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Ullam ipsum!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laboriosam sapiente voluptates quo cupiditate quasi praesentium suscipit, fuga iusto facilis!</p>
+				<a href="#">Request Demo</a>
+			</div>
+			<div class="BXW">
+				<div class="bxWrap">
+					<div class="bx1"><a href="#">Registration Guide</a></div>
+					<div class="bx2"><a href="#">Live Call <br>Support</a></div>
+					<div class="bx3"><a href="#">Secured <br>Payment</a></div>
+					<div class="bx4"><a href="#">Track Your <br>Move</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="forthpage">
+		<div class="forthinner">
+			<img src="images/fifthpage.png" alt="#" class="forthpng">
+			<div class="txt">
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Ullam ipsum!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laboriosam sapiente voluptates quo cupiditate quasi praesentium suscipit, fuga iusto facilis!</p>
+				<a href="#">Request Demo</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="fifthpage">
+		<div class="fifthinner">
+			<div class="txt">
+				<p class="wow bounceInDown" data-wow-delay="0.8s">With Solution, financial benifits have never been easier.</p>
+			</div>		
+			<div class="shape1 wow bounceInLeft" data-wow-delay="1s">
+				<p>For Employers</p>
+			</div>			
+			<div class="shape2 wow bounceInRight" data-wow-delay="1s">
+				<p>For Owners</p>
+			</div>
 		</div>
 	</div>
 	
+	<div class="sixthpage">
+		<div class="sixthinner">
+			<div class="txt">
+				Frequently Asked Question.
+			</div>
+			<div class="txt2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quos, mollitia <br>incidunt praesentium minus nobis id laboriosam illo!
+			</div>
+		</div>
+	</div>
+
+	<div class="svnthpage">
+		<div class="svnthinner">
+			<div class="bo1"><a href="#">1.Does It Work?<img src="images/point.png" alt="" class="point"></a></div>
+			<div class="bo2"><a href="#">2.What Is The Financial Plan?<img src="images/point.png" alt="" class="point"></a></div>
+			<div class="bo3"><a href="#">3.Can I Know How It Works?<img src="images/point.png" alt="" class="point"></a></div>
+			<div class="bo4"><a href="#">4.How Many Employers Can I Expect?<img src="images/point.png" alt="" class="point"></a></div>
+		</div>
+	</div>
+
+	<div class="eighthpage">
+		<div class="eighthinner">
+			<div class="txt">
+				<h3>Financial planning is about more than just good advice or investment returns.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias error mollitia, expedita tenetur quas ipsa.</p>
+				<a href="#">Request a Demo</a>
+			</div>
+			<div class="img">
+				<img src="images/eighthpage.png" alt="#" class="img">
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footerinner">
+			<div class="chavy">
+				<h3>chavy</h3>
+				<p>Built for every employee, everywhere.</p>
+				<p>580 oras street<br>lanItali, DA354130<br>stream@soltion.com</p>
+			</div>
+			<div class="about">
+				<h4>ABOUT</h4>
+				<p>Why Solution<br>What We Do<br>Testimonials</p>
+			</div>
+			<div class="product">
+				<h4>PRODUCT</h4>
+				<p>How It Works<br>Features<br>FAQ</p>
+			</div>
+			<div class="company">
+				<h4>COMPANY</h4>
+				<p>Team<br>Careers</p>
+			</div>
+			<div class="line"></div>
+			<div class="copyright">Copyright @ 2020. Syed Roni behalf of isketch. All Rights Reserved.</div>
+			<div class="terms">TERMS OF SERVICE</div>
+			<div class="privacy">PRIVACY POLICY</div>
+		</div>
+
+	</div>
 </body>
 </html>

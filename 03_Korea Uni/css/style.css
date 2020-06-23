@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*header*/
+header#header{height: 160px;}
+#header .headertop{height: 50px;background: #0044af;}
+.headertop .menu{width: 1200px;height: 50px;/*background: gray;*/margin: 0 auto}
+.menu .clearfix{width: 390px;height: 50px;background: white;}
+.menu li{float: left;width: 130px;height: 50px;background: #00163b;border-right: 2px solid #0044af;}
+.menu li>a{color: white;text-align: center;height: 50px;line-height: 50px;display: block;font-weight: bold}
+.menu li>a:hover{background: #fff;color:#0044af;font-weight: bold;font-size: 1.2em}
+
+#header .headerbt{/*background: gray;*/height: 110px;}
+.headerbt .menu2{width: 1200px;height: 110px;background: white;margin: 0 auto;position: relative;}
+.headerbt img.img{position: absolute;top: 50%;top: 26px}
+.headerbt .menuinner{/*background: gray;*/position: absolute;right: 140px;top: 27.5px}
+.headerbt .clearfix1{width: 600px;height: 50px;line-height: 55px;}
+.headerbt .menuinner li{float: left;width: 110px;text-align: center;}
+.headerbt .menuinner li>a{display: block;font-size:1.1em;color: #474747;font-weight:bolder;}
+.headerbt .menuinner li>a:hover{font-size: 1.2em}
+.headerbt .menuinner li:last-child{width: 150px;}
+
+
+/*contents*/
+#contents{height: 1300px;background-image:url(../images/00bg_dot.gif), url(../images/00main_bg01.jpg);
+		  background-repeat:repeat,no-repeat; background-position: -120px -200px;
+		  background-size:auto,125% 120%;}
+#contents .title{width: 1200px;height: 260px;margin: auto;position: relative;}
+.title .txt{width: 690px;/*background: red;*/padding: 90px 0 0 0;}
+.title p.txt1{color: white;font-size: 2.6em;font-weight: normal;}
+.title p.txt2{font-size: 3.5em;font-weight: bold;color: white}
+.title img.icon{position: absolute;right: 0;top: 100px;}
+#contents .container{width: 1200px;margin: auto;}
+#contents .container li{float: left;width: 25%;height: 225px;}
+#contents .container li:nth-child(1){background: magenta;width: 75%;height: 450px;}
+#contents .container li:nth-child(2){background: #00f;height: 450px;}
+#contents .container li:nth-child(3){background: #fff;}
+#contents .container li:nth-child(4){background: #ec3;}
+#contents .container li:nth-child(5){background: #4c3;}
+#contents .container li:nth-child(6){background: #7b5;}
+#contents .container li:nth-child(7){background: #2f3;}
+#contents .container li:nth-child(8){background: pink;width: 75%;}
+
+
+
+/*footer*/
+footer#footer{height: 200px;}
