@@ -4,8 +4,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>Chavy</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Piedra&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">  <!-- 스타일 파일 위치 확인 -->
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
@@ -14,144 +22,15 @@
 		$(document).ready(function(){
 			$('.slider').bxSlider({
 				controls:false,
-				auto:false
+				auto:false,
+				// pager:false
 			});
 		});
 	</script>
 	<script>
 		new WOW().init();
 	</script>
-	<style>
 
-		.bx-wrapper{
-	      -moz-box-shadow:none;
-	      -webkit-box-shadow:none;
-	      box-shadow: none;
-	      border: 0 none;
-	      }
-	      .bx-wrapper .bx-pager{
-	      bottom: 20px;
-	      }
-		/*header*/
-		.Header{width: 100%;height: 65px;/*background-color: skyblue;*/margin-top: 30px;margin-bottom: 20px;}
-		.TOPmenu{width: 1220px;/*background-color: white;*/margin: 0 auto;position: relative;}
-		.TOPmenu>h1{width: 150px;/*background-color: pink;*/line-height: 65px;
-				font-size: 3em;text-align: center;}
-		.logoR{width: 600px;/*background-color: magenta;*/line-height: 65px;font-weight: bold}
-		.logoRR{width: 300px;/*background-color: red;*/line-height: 65px;font-weight: bold}
-		.logoR>ul:after{content: "";display: block;clear: both;}
-		.logoR>ul>li{float: left;width: 150px;}
-		.logoR>ul>li>a:hover{background: #999;display: block;font-weight: bold;color: white}
-		.logoRR>ul:after{content: "";display: block;clear: both;}
-		.logoRR>ul>li{float:left;width: 150px;}
-		.logoRR>ul>li>a:hover{background: #999;display: block;font-weight: bold;color: white}
-		nav.LOGO{position: absolute;right: 0;top: 0;text-align: center;}
-		nav.logoR, nav.logoRR{float: left;}
-		nav.logoR{margin-right: 30px;}
-
-		/*bxSlider*//*-jquery.bxslider.css 7쨰라인 마진값없앴음*/
-		.visual{}
-		.visual .view{position: relative;width: 1220px;height: 600px;margin:0 auto;}
-		.visual .slider>li{overflow: hidden;}
-		.visual .slider img.img{position: absolute; left: 20%;}
-		.visual .visualtxt{position: absolute;top: 150px;width: 500px;}
-		.visual .visualtxt h3{font-size: 2.5em;margin-bottom: 20px;}
-		.visual .visualtxt p{margin-bottom: 30px;}
-		.visual .visualtxt a{display: block;width: 200px;height: 60px;background: #2c2c96;color: white;border-radius: 40px;text-align: center;line-height: 60px;}
-
-		/*SaveM*/
-		.SaveM{height: 280px;width: 100%;background-color: #f8f9ff;}
-		.SaveM .txt{margin: 0 auto;_background-color: pink;width: 700px;height: 150px;text-align: center;padding-top: 70px;}
-		.SaveM .txt h1{font-size: 2.5em;margin-bottom: 40px;}
-		
-		/*box*/
-		.box{height: 740px;background: #fff;}
-		.box1{height: 550px;background: #fff;margin-top: 190px;position: relative;}
-		.box1 .txt{width: 500px;background: #fff;position: absolute;right: 50%;margin-right: 100px;top: 25%}
-		.box1 .txt>h3{font-size: 1.7em;margin-bottom: 30px;}
-		.box1 .txt>p{margin-bottom: 40px;}
-		.box1 .txt>a{display: block;width: 200px;height: 60px;background: #2c2c96;color: white;border-radius: 40px;text-align: center;line-height: 60px;}
-
-		.BXW{position: absolute;left: 55%;top:100px;}
-		.bxWrap{width: 350px;height: 350px; background: #fff;position: relative;text-align: center;}
-		.bx1, .bx2, .bx3, .bx4{width: 165px;height: 165px;position: absolute;padding:100px 0 0 0;border: 2px solid #f8f9ff;
-							   box-shadow: 1px 1px 5px #F6F6F6}
-		.bx1{background-color: white;}
-		.bx2{background-color: #f8f9ff;right:0}
-		.bx3{background-color: white;left: 0;bottom: 0;}
-		.bx4{background-color: white;right: 0;bottom: 0;}
-
-		/*forthpage*/
-		.forthpage{height: 790px;background: #f8f9ff;}
-		.forthinner{width: 1220px;height: 790px;background: #f8f9ff;margin: 0 auto;position: relative;}
-		.forthinner img.forthpng{position: absolute;right: 0;top: 50px;}
-		.forthinner .txt{background: skyblue;position: absolute;}
-		.forthinner .txt{width: 500px;background: #f8f9ff;position: absolute;right: 50%;margin-right: 100px;top: 25%}
-		.forthinner .txt>h3{font-size: 1.7em;margin-bottom: 30px;}
-		.forthinner .txt>p{margin-bottom: 40px;}
-		.forthinner .txt>a{display: block;width: 200px;height: 60px;background: #2c2c96;color: white;border-radius: 40px;text-align: center;line-height: 60px;}
-
-		/*fifth page*/
-		.fifthpage{height: 400px;width: 100%;}
-		.fifthinner{width: 1220px;height: 400px;/*background: yellow;*/margin: 0 auto;position: relative;}
-		.fifthinner .txt{/*background: red;*/width: 1220px;position: absolute;left: 50%;margin-left: -610px;top: 120px;font-size: 2.7em;text-align: center;font-weight: bold;}
-		.fifthinner .shape1{width: 200px;height: 60px;background: red;position: absolute;top: 60%;right: 50%;background: #2c2c96;border-radius: 40px}		
-		.fifthinner .shape2{width: 200px;height: 60px;background: red;position: absolute;top: 60%;left: 50%;background: #f8f9ff;border-radius: 40px}
-		.fifthinner .shape1 p{text-align: center;font-weight: bold;color: white;line-height: 60px}
-		.fifthinner .shape2 p{text-align: center;font-weight: bold;color: black;line-height: 60px}
-
-		/*sixth page*/
-		.sixthpage{height: 400px;width: 100%;/*background: skyblue;*/}
-		.sixthinner{width: 1220px;height: 400px;/*background: gray;*/margin: 0 auto;position: relative;}
-		.sixthinner .txt{width: 600px;font-size: 2.7em;font-weight: bold;position: absolute;/*background: #ff0;*/left: 320px;top:120px}
-		.sixthinner .txt2{text-align: center;/*background: #ff0;*/width: 600px;position: absolute;left: 300px;bottom: 100px}
-		
-		/*seventh page*/
-		.svnthpage{width: 100%;height: 750px;/*background: pink;*/}
-		.svnthinner{width: 1220px;height: 750px;/*background: skyblue;*/margin: 0 auto;padding: 50px 0 0 0;}
-		.svnthinner .bo1{height: 130px;width: 1220px;/*background: #ff0*/;margin: 0 auto;border-radius: 60px;border: 2px solid #f8f9ff;margin-bottom: 50px;}
-		.svnthinner .bo1 a{line-height: 130px;padding: 0 0 0 100px;font-size: 1.5em;font-weight: bold;}
-		.svnthinner .bo1 img.point{margin-left: 800px;}
-		.svnthinner .bo2{height: 130px;width: 1220px;/*background: #ff0*/;margin: 0 auto;border-radius: 60px;border: 2px solid #f8f9ff;margin-bottom: 50px;box-shadow: 1px 1px 5px gray;}
-		.svnthinner .bo2 a{line-height: 130px;padding: 0 0 0 100px;font-size: 1.5em;font-weight: bold;}
-		.svnthinner .bo2 img.point{margin-left: 650px;}
-		.svnthinner .bo3{height: 130px;width: 1220px;/*background: #ff0*/;margin: 0 auto;border-radius: 60px;border: 2px solid #f8f9ff;margin-bottom: 50px;}
-		.svnthinner .bo3 a{line-height: 130px;padding: 0 0 0 100px;font-size: 1.5em;font-weight: bold;}
-		.svnthinner .bo3 img.point{margin-left: 650px;}
-		.svnthinner .bo4{height: 130px;width: 1220px;/*background: #ff0*/;margin: 0 auto;border-radius: 60px;border: 2px solid #f8f9ff;margin-bottom: 50px;}
-		.svnthinner .bo4 a{line-height: 130px;padding: 0 0 0 100px;font-size: 1.5em;font-weight: bold;}
-		.svnthinner .bo4 img.point{margin-left: 550px;}
-
-		/*eighth page*/
-		.eighthpage{width: 100%;height: 740px;background: #fff;}
-		.eighthinner{width: 1220px;height: 740px;background: #fff;margin: 0 auto;position: relative;}
-		.eighthinner .txt{width: 400px;position: absolute;top: 50%;/*background: #ff0;*/height: 300px;margin-top: -150px}
-		.eighthinner .txt h3{font-size: 1.7em;margin-bottom: 30px;}
-		.eighthinner .txt p{margin-bottom: 40px;}	
-		.eighthinner .txt a{width: 200px;height: 60px;background: #2c2c96;color: white;border-radius: 40px;display: block;text-align: center;line-height: 60px;}
-		.eighthinner img.img{position: absolute;right:-10%;top: -20px}
-
-		/*footer*/
-		.footer{height: 480px;background: #f8f9ff;}
-		.footerinner{width: 1220px;height: 480px;margin: 0 auto;position: relative;}
-		.footerinner .chavy h3{font-size: 3em;margin-bottom: 20px; padding: 150px 0 0 0;}
-		.chavy p{margin-bottom: 50px;}
-		.footerinner .about{width: 100px;height: 200px;position: absolute;right: 400px;top: 200px;}
-		.footerinner .about h4{margin-bottom: 30px;font-size: 1.2em}
-		.footerinner .about p{line-height: 30px;}
-		.footerinner .product{width: 100px;height: 200px;position: absolute;right: 200px;top: 200px;}
-		.footerinner .product h4{margin-bottom: 30px;font-size: 1.2em}
-		.footerinner .product p{line-height: 30px;}
-		.footerinner .company{width: 100px;height: 200px;position: absolute;right: 0;top: 200px;}
-		.footerinner .company h4{margin-bottom: 30px;font-size: 1.2em}
-		.footerinner .company p{line-height: 30px;}
-		.footer .line{height: 1px;background: #c4c4c7;margin-bottom: 30px;}
-		.footer .copyright{position: absolute;bottom: 40px;}
-		.footer .terms{position: absolute;bottom: 40px;right: 200px;}
-		.footer .privacy{position: absolute;bottom: 40px;right: 0}
-
-
-	</style>
 </head>
 
 <body>
@@ -201,14 +80,22 @@
 		</ul>
 	</div>
 
-	<div class="SaveM">
+<!-- 	<div class="SaveM">
 		<div class="txt">
 			<h1 class="wow fadeInDown"data-wow-delay="1.5s">Save money & <span>money will save you.</span></h1>
 			<p class="wow fadeInUp"data-wow-delay="1.9s">I will tell you how to become a rich. Close the doors. Be fearful<br>when others are greedy.</p>
 		</div>
+	</div> -->
+	
+	<!-- 선생님 작업 -->
+	<div class="wrap bgColorOne"><!-- 100% -->
+		<div class="conOne"><!-- 1200 -->
+			<h2>Lorem ipsum dolor <span class="fontColorOne">sit amet, consectetur.</span></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, tempora!</p>
+		</div>
 	</div>
 
-	<div class="box">
+<!-- 	<div class="box">
 		<div class="box1">
 			<div class="txt">
 				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Ullam ipsum!</h3>
@@ -224,13 +111,42 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+
+	<!-- 선생님 작업 -->
+	<div class="conTwo clearfix">
+		<div class="txtBox">
+			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ab?</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, blanditiis sequi. Sed dolore, ipsa voluptatum incidunt alias rerum ex!Porro.</p>
+			<a href="#" class="shadow">Lorem ipsum.</a>
+		</div>
+		<div class="iconbox">
+			<ul class="clearfix">
+				<li>
+				<img src="images/icon01_01.jpg" alt="#">
+				<p>Lorem<br> ipsum.</p>
+				</li>
+				<li>
+				<img src="images/icon01_02.jpg" alt="#">
+				<p>Lorem<br> ipsum.</p>
+				</li>
+				<li>
+				<img src="images/icon01_03.jpg" alt="#">
+				<p>Lorem<br> ipsum.</p>
+				</li>
+				<li>
+				<img src="images/icon01_04.jpg" alt="#">
+				<p>Lorem<br> ipsum.</p>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<div class="forthpage">
 		<div class="forthinner">
 			<img src="images/fifthpage.png" alt="#" class="forthpng">
 			<div class="txt">
-				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Ullam ipsum!</h3>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsum!</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laboriosam sapiente voluptates quo cupiditate quasi praesentium suscipit, fuga iusto facilis!</p>
 				<a href="#">Request Demo</a>
 			</div>

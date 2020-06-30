@@ -1,0 +1,24 @@
+@charset "utf-8";
+.bx-wrapper .bx-pager{display:none;}
+
+#firstpg{font-family: 'Krona One', sans-serif;}
+
+/*header*/
+#header{width: 100%;height: 140px;_background: skyblue;}
+.Wrap{width: 1200px;height: 140px;_background: aqua;margin: 0 auto;}
+.Wrap .Wrapinner{line-height: 140px;}
+.Wrap .left{_background: pink;float: left;}
+.Wrap .right{_background: magenta;float: right;width: 400px;}
+.Wrap .right li{float: left;width: 133.33px;}
+.Wrap li a{display: block;}
+.Wrap li a:hover{font-size: 1.1em;font-weight: bold}
+
+/*firtstpage*/
+#firstpg{width: 100%;height: 800px;_background: pink;}
+#firstpg .visual{margin: 0 auto; _background: aqua;width: 1440px;height: 790px;position: relative;}
+.visual .visualtxt{position: absolute;width: 585px;height: 355px;top: 50%;top:292.5px;left: 150px;}
+.visual .visualtxt h3{color: #1f2442;font-weight: bold;margin-bottom: 50px;font-size: 2.2em;line-height: 60px;}
+.visual .visualtxt a{display: block;width: 295px;height: 75px;background: #444daa;text-align: center;color: white;padding: 30px 0 ;}
+.visual .visualtxt a:hover{font-size: 1.1em}
+
+/*2nd page*/

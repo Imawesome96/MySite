@@ -7,10 +7,21 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				controls:false,
+				auto:true,
+				pager:false
+			});
+		});
+	</script>
 </head>
 <body>
 	<!-- header -->
-	<header id="header">
+<!-- 	<header id="header">
 		<div class="headertop">
 			<div class="menu">
 				<ul class="clearfix">
@@ -34,8 +45,47 @@
 				</div>
 			</div>
 		</div>
+	</header> -->
+
+	<!-- 선생님작업 -->	
+	<header id="header_wrap">
+			<div class="utilMenuWrap"><!-- 100% -->
+				<nav class="utilMenu clearfix"> <!-- 1200 m0a -->
+					<ul class="left clearfix">
+						<li><a href="#" class="active">대학교</a></li>
+						<li><a href="#">입학안내</a></li>
+						<li><a href="#">대학원</a></li>
+					</ul>
+					<ul class="right clearfix">
+						<li>글자크기</li>
+						<li class="btn_mp clearfix">
+							<a href="#">-</a>
+						    <a href="#">+</a>
+						</li>
+						<li><a href="#">찾아오시는 길</a></li>
+						<li><a href="#">ENG</a></li>
+						<li><a href="#">사이트 맵</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="mainGnb"><!-- 1200 m0a -->
+				<h1 class="logo"><a href="#">Korea University</a></h1>
+				<div class="navWrap clearfix" _style="display: none;"><!-- poa -->
+					<ul class="nav clearfix">
+						<li><a href="#">대학소개</a></li>
+						<li><a href="#">학과소개</a></li>
+						<li><a href="#">학사안내</a></li>
+						<li><a href="#">대학생활</a></li>
+						<li><a href="#">학생지원센터</a></li>
+					</ul>
+					<div class="btnTG clearfix">
+						<a href="#" class="toggle">toggle</a>
+						<a href="#" class="my">my</a>
+					</div>
+				</div>
+			</div>
 	</header>
-	
+	<!-- 선생님작업 -->
 
 	<!-- contents -->
 	<div id="contents">
@@ -48,20 +98,176 @@
 		</section>
 		<div class="container">
 			<ul class="clearfix">
-				<li>01</li>
-				<li>02</li>
-				<li>03</li>
-				<li>04</li>
-				<li>05</li>
-				<li>06</li>
-				<li>07</li>
-				<li>08</li>
+				<li>
+<!-- 					<div class="txt01"><span class="bold">한국</span>에서<br> <span class="bold">시작</span>하는<br> 새로운 <span class="bold">꿈</span>
+					</div>
+					<a href="#" class="more">자세히보기</a> -->
+					<!-- <img src="images/bg_02.png" alt=""> -->
+					<div class="visual">
+						<ul class="slider">
+							<li>
+								<img src="images/bg_02.png" alt="" class="img" >
+								<div class="visualtxt">
+									<div class="txt01">
+										<span class="bold">한국</span>에서<br> <span class="bold">시작</span>하는<br> 새로운 <span class="bold">꿈</span>
+									</div>
+									<a href="#" class="btnA">자세히보기</a>
+								</div>
+							</li>						
+							<li>
+								<img src="images/bg_02.png" alt="" class="img" >
+								<div class="visualtxt">
+									<div class="txt01">
+									<span class="bold">한국</span>에서<br> <span class="bold">시작</span>하는<br> 새로운 <span class="bold">꿈</span>
+									</div>
+									<a href="#" class="btnA">자세히보기</a>
+								</div>
+							</li>						
+							<li>
+								<img src="images/img_slide_03.png" alt="" class="img">
+								<div class="visualtxt"></div>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li>
+					<div class="overlay">
+						<div class="txt">
+							<p class="one"><span class="app">APP</span>으로<br><span class="app">스마트 도서관</span><br> 바로 이용하자!</p><br>
+							<p class="two"><strong>모바일 열람증은<br> 도서관 자료실/도서대출 등에<br> 사용 할 수 있습니다.</strong></p><br>
+							<a href="#" class="thr">자세히 보기</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="txt"><h3>HOT LINK</h3></div>
+				</li>
+
+				<li>
+					<div class="wrap">
+						<div class="hd"><h3>공지사항</h3></div>
+						<div class="line"></div>
+					</div>
+					<div class="wrapTwo clearfix">
+						<ul class="left">
+							<li>◼[공지] 한국대학교 웹진...</li>
+							<li>◼[보도] 우수대학교 선정 수상</li>
+							<li>◼[공지] 대학입시 설명회</li>
+							<li>◼[공지] 2020년 1학기 성적...</li>
+						</ul>
+						<ul class="right clearfix">
+							<li>2020-06-15</li>
+							<li>2020-05-27</li>
+							<li>2020-06-11</li>
+							<li>2020-06-22</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="hd"><h3 class="sns">SNS</h3></div>
+						<div class="Wrap">
+							<div class="wrap clearfix">
+								<div class="img">
+									<img src="images/sch_01.jpg" alt="">
+								</div>
+								<div class="txt">
+									한국대학교는<br> 2020학년도 신입생<br> 입학식을 6월 3일(목)<br> 본교 종합체육과...
+								</div>
+							</div>
+						</div>
+					<div class="snsimg"><img src="images/sns_04.png" alt=""></div>
+				</li>
+				<li>
+					<div class="overlay2">
+						<div class="txt">
+							<p class="one">CAMPUS TOUR</p><br>
+							<p class="two"><strong>모바일 열람증은<br> 도서관 자료실/도서대출 등에<br> 사용 할 수 있습니다.</strong></p><br>
+							<a href="#" class="thr">자세히 보기</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#">a</a>
+				</li>
+				<li>
+					<div class="visual">
+						<ul class="slider">
+							<li class="view">
+								<img src="images/bottom_bg01.png" alt="">
+									<div class="visualtxt02">
+										<div class="txt02">
+											<strong><p class="note">2020년 신.편입생 2차 모집</p></strong>
+											<p class="date">2020.7.1~7.10</p>
+										</div>
+										<a href="#" class="btnB">입학사전예약</a>
+									</div>
+							</li>
+							<li class="view">
+								<img src="images/logo.png" alt="">
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="lastCell">
+			<ul class="clearfix">
+				<li class="bx1">
+					<div class="wrap">
+						<ul class="txtbx">
+							<li class="txt01">
+								학사일정
+							</li>
+							<li class="txt02">
+								<strong><a href="#"><</a> 2020 07 <a href="#">></a></strong>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="bx2">
+					<div class="wrapT">
+						<ul class="txtbx02">
+							<li class="txt03">
+								<strong>2020-1학기 성적 열람 및 상담 신청</strong>
+							</li>
+							<li class="txt04">
+								성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="bx3">
+					<div class="line"></div>
+				</li>
 			</ul>
 		</div>
 	</div>
 
 
 	<!-- footer -->
-	<footer id="footer"></footer>
+	<footer id="footer">
+	<div class="Wrap">
+		<div class="WrapTwo">
+			<ul>
+				<li>회사소개</li>
+				<li>한국대학교</li>
+				<li>개인정보취급방침</li>
+				<li>이용정책</li>
+				<li>입점/제휴문의 광고</li>
+				<li>이메일 무단수집거부</li>
+			</ul>
+		</div>
+		<br>
+		<div class="txt">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sunt blanditiis quos optio accusantium nostrum sequi<br> sapiente, dicta animi illo, tempore, vitae sit consequuntur. Consectetur fuga obcaecati debitis, maxime ratione!
+		</div>
+		<div class="txt01">
+			COPYRIGHT Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, itaque.
+		</div>
+	</div>
+	</footer>
 </body>
 </html>
