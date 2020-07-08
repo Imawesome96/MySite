@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+body nav.Hdr{font-family: 'Archivo Narrow', sans-serif;}
+body .contentsOne{font-family: 'Black Han Sans', sans-serif;}
+
+.overlay{width: 265px;height: 260px;background-color:rgba(135,94,0,.5);
+		transition: .1s;color: white;right: 0px;}
+
+
+
+/*header*/
+nav.Hdr{background-image: url(../images/01_bgplane.png);background-repeat: no-repeat;background-size: 100%}
+.Hdrtxt{width: 1100px;_background: red;height: 87px;margin: 0 auto;position: relative;}
+.Hdrtxt .logo{background: white;width: 50px;height: 50px;position: absolute;top: 20px;border-radius: 25px}
+.Hdrtxt .search{width: 300px;height: 30px;background: white;border-radius: 15px;position: absolute;top: 30px;left: 320px;}
+.Hdrtxt .tel{color: white;font-weight: bold;font-size: 1.8em;position: absolute;top: 25px;right: 150px;}
+.Hdrtxt h2{color: white; padding: 15px 0 0 60px;font-size: 2em}
+.Hdrtxt p{color: white;font-size: 0.8em;padding: 0 0 0 75px;}
+.Hdrtxt img.img{position: absolute;right: 0;top: 33px;}
+/*hdmenu*/
+.MenuWrap{width: 100%;background: #fcfcfc;border-top: 3px solid #055685;border-bottom: 3px solid #0e73a7;}
+.MenuWrap .Menu{width: 1100px;margin: 0 auto;background: #fcfcfc;}
+.Menu ul li{float: left;text-align: center;border-right: 1px solid #e8e8e8;}
+.Menu ul li:first-child{border-left: 1px solid #e8e8e8;}
+.Menu ul li a{display: block;width: 182px;height: 60px;line-height: 60px;font-weight: bold;font-size: 1.1em}
+.Menu ul li:hover{background: #C4FDFF;}
+.Menu ul li a:hover{font-size: 1.2em}
+
+
+/*body*/
+nav.body{height: 1330px;_background: yellow;background-image:/*url(../images/00bg_dot-1.gif),*/ url(../images/bg_sky.png);
+	background-repeat: /*repeat,*/no-repeat;background-size: /*auto,*/100%;background-position: 0 50%;
+	 padding-top: 60px;}
+nav.body .contentsOne{width: 1100px;height: 575px;_background: #ff0;_opacity: 0.5;margin: 0 auto;position: relative;
+	margin-bottom: 20px;z-index: 0}
+.contentsOne .reserv{width: 550px;height: 300px;background: white;margin-bottom: 15px;}
+.contentsOne .countryWrap{width: 560px;height: 260px;_background: aqua;}
+.countryWrap ul{}
+.countryWrap ul li{float: left;}
+.countryWrap ul li.france{background: blue;width: 265px;height: 260px;margin-right: 10px;position: relative;overflow: hidden;}
+.countryWrap ul li.france img.img{width: 100%;height: 100%;}
+.countryWrap ul li.france .dsc{width: 265px;height: 260px;background: #152630;position: absolute;font-size: 17px;top: 220px;transition: 0.9s;}
+.countryWrap ul li.france .dsc ul{padding: 10px 0 10px 60px;}
+.countryWrap ul li.france .dsc ul li{float: left; color: white;padding-right: 20px;}
+.countryWrap ul li.france .dsc ul li.dollor{color: #549253;}
+.countryWrap ul li.france .dsc ul li.dollor a{color: #566467;padding-left: 10px}
+.countryWrap ul li.france:hover .dsc{top: 0;background-color: rgb(21,38,48,.5)}
+.countryWrap ul li.france:hover ul li.dollor{color: #6abb6a}
+
+.countryWrap ul li.japan{background: purple;width: 265px;height: 260px;}
+.countryWrap ul li.japan{background: blue;width: 265px;height: 260px;margin-right: 20px;position: relative;overflow: hidden;}
+.countryWrap ul li.japan img.img{width: 100%;height: 100%;}
+.countryWrap ul li.japan .dsc{width: 265px;height: 260px;background: #152630;position: absolute;font-size: 17px;top: 220px;transition: 0.9s;}
+.countryWrap ul li.japan .dsc ul{padding: 10px 0 10px 60px;}
+.countryWrap ul li.japan .dsc ul li{float: left; color: white;padding-right: 30px;}
+.countryWrap ul li.japan .dsc ul li.yan{color: #549253;}
+.countryWrap ul li.japan .dsc ul li.yan a{color: #566467;padding-left: 10px}
+.countryWrap ul li.japan:hover .dsc{top: 0;background-color: rgb(21,38,48,.5)}
+.countryWrap ul li.japan:hover ul li.yan{color: #6abb6a}
+
+.contentsOne .txt{width: 550px;height: 230px;_background: gray;top: 20px;right: 0;position: absolute;z-index: 0}
+.contentsOne .txt h1{font-size: 4.2em;padding: 50px 0 0 40px;margin-bottom: 20px;}
+.contentsOne .txt p{font-size: 2em;padding-left: 40px;}
+.img01{position: absolute;right: 0px;}
+.img01{animation-name:ballon;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+		z-index: 1}
+@keyframes ballon{
+		0%{transform: translateY(-20px);}
+		100%{transform: translateY(0);}
+		}
+
+nav.body .contentsTwo{width: 1100px;height: 570px;_background: #ff0;margin: 0 auto;_opacity: 0.5;position: relative;z-index: 1}
+.contentsTwo ul li{float: left;margin-right: 20px;}
+.contentsTwo ul li:last-child{margin-right: 0;}
+
+.contentsTwo .Hilton{width: 260px;height: 275px;background: red;}
+.contentsTwo .Hilton img{width: 100%;height: 275px;}
+.contentsTwo .Disney{width: 260px;height: 275px;background: green;}
+.contentsTwo .Disney img{width: 260px;height: 275px;}
+.contentsTwo .box3{width: 260px;height: 275px;background: pink;}
+.contentsTwo .box4{width: 260px;height: 275px;background: lime;}
+.contentsTwo .secondR{padding-top: 20px;}
+.contentsTwo .box5{width: 260px;height: 275px;background: gray;}
+.contentsTwo .box6{width: 260px;height: 275px;background: purple;}
+.contentsTwo .box7{width: 260px;height: 275px;background: crimson;}
+.contentsTwo .box8{width: 260px;height: 275px;background: violet;}
+
+
+/*footer*/
+nav.footer .Wrap{width: 1100px;height: 60px;_background: brown;margin: 0 auto; margin-top: 20px;}
+nav.footer .Wrap ul{margin-bottom: 10px;}
+nav.footer .Wrap ul li{float: left;font-size: 14px;padding-right: 50px;}

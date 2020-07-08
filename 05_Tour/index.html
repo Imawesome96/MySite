@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>ASH TOUR</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600&family=Black+Han+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				pager:false,
+				controls:true,
+			});
+
+			$(".nxtBT").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prvBT").click(function(){
+				mySlider.goToPrevSlide();
+			});
+
+		});
+	</script>
+	<style>
+	.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+	</style>
+</head>
+<body>
+<!-- header -->
+<nav class="Hdr">
+	<div class="Hdrtxt">
+		<div class="logo"></div>
+		<h2>TRAVEL</h2>
+		<p>하 이 미 디 어</p>
+		<div class="search"></div>
+		<div class="tel">+82 02 123456789</div>
+		<img src="images/02_sns.png" alt="" class="img">
+	</div>
+</nav>
+<div class="MenuWrap">
+	<div class="Menu">
+		<ul class="clearfix">
+			<li><a href="#">여행도시</a></li>
+			<li><a href="#">호텔예약</a></li>
+			<li><a href="#">렌트카</a></li>
+			<li><a href="#">여행TIP</a></li>
+			<li><a href="#">회사소개</a></li>
+			<li><a href="#">커뮤니티</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- body -->
+<nav class="body">
+	<div class="contentsOne">
+		<div class="reserv"></div>
+		<div class="countryWrap">
+			<ul class="clearfix">
+				<li class="france">
+					<img src="images/france.jpg" alt="#" class="img">
+					<div class="dsc">
+						<ul class="clearfix">
+							<li>프랑스</li>
+							<li class="dollor">$12,000~ <a href="#">></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="japan">
+					<img src="images/japan.jpg" alt="#" class="img">
+					<div class="dsc">
+						<ul class="clearfix">
+							<li>일본</li>
+							<li class="yan">$800~<a href="#">></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="txt">
+			<h1>TRAVEL GO</h1>
+			<p>지금, 여행이 떠나고 싶으면?<br>성현이와 여행을 떠나자!</p>
+			<img src="images/content2.png" alt="" class="img01">
+		</div>
+	</div>
+
+	<div class="contentsTwo">
+		<ul class="fisrtR clearfix">
+			<li class="Hilton">
+				<ul class="slider">
+					<li>
+						<div style="position: absolute;width: 260px;height: 60px;background:#529351;bottom: 0;text-align: center;color: white">
+							<h4 style="padding-top: 5px">HILTON HOTEL (PARIS)</h5>
+							<img src="images/star.png" alt="" style="position: absolute;height: 20px;width: 79px;left: 40px;bottom: 10px">
+						</div>
+						<div class="prvBT" style="position: absolute;width: 35px;height: 55px;background: #152630;top: 50%;margin-top: -25px;opacity: .4">
+							<img src="images/prvBT.png" alt="" style="position: absolute;width: 15px;height: 30px;left: 10px;top: 50%;margin-top: -15px;cursor: pointer;">
+						</div>
+						<div class="nxtBT" style="position: absolute;width: 35px;height: 55px;background: #152630;right: 0;top: 50%;margin-top: -25px;opacity: .4">
+							<img src="images/nxtBT.png" alt="" style="position: absolute;width: 15px;height: 30px;right: 10px;top: 50%;margin-top:-15px;cursor: pointer">
+						</div>
+						<img src="images/hilton.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/disney.jpg" alt="">
+					</li>
+				</ul>
+			</li>
+			<li class="Disney">
+				<ul class="slider">
+					<li>
+						<div style="width: 260px;height: 60px;background: #152630;position:absolute;bottom: 0;color: white; text-align: center">
+							<h4 style="padding-top: 5px">관광명소 (디즈니랜드)</h4>
+							<img src="images/star2.png" alt="" style="position: absolute;height: 20px;width: 79px;left: 40px;bottom: 10px">
+						</div>
+						<div class="prvBT" style="position: absolute;width: 35px;height: 55px;background: #152630;top: 50%;margin-top: -25px;opacity: .4">
+							<img src="images/prvBT.png" alt="" style="position: absolute;width: 15px;height: 30px;left: 10px;top: 50%;margin-top: -15px;cursor: pointer;">
+						</div>
+						<div class="nxtBT" style="position: absolute;width: 35px;height: 55px;background: #152630;right: 0;top: 50%;margin-top: -25px;opacity: .4">
+							<img src="images/nxtBT.png" alt="" style="position: absolute;width: 15px;height: 30px;right: 10px;top: 50%;margin-top:-15px;cursor: pointer">
+						</div>
+						<img src="images/disney.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/hilton.jpg" alt="">
+					</li>
+				</ul>
+			</li>
+			<li class="box3"></li>
+			<li class="box4"></li>
+		</ul>
+		<ul class="secondR">
+			<li class="box5"></li>
+			<li class="box6"></li>
+			<li class="box7"></li>
+			<li class="box8"></li>
+		</ul>
+	</div>
+
+	<!-- footer -->
+	<nav class="footer">
+		<div class="Wrap">
+			<ul class="clearfix">
+				<li>이용약관</li>
+				<li>개인정보취급방침</li>
+				<li>사이트맵</li>
+				<li>고객센터</li>
+				<li>광고 및 제휴문의</li>
+			</ul>
+			<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, minima suscipit cum <br> Rem ipsam consequatur nesciunt voluptate quasi architecto impedit illum.</div>
+		</div>
+	</nav>
+
+
+</nav>
+
+
+
+
+
+</body>
+</html>

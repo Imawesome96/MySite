@@ -156,7 +156,8 @@ header#header_wrap .utilMenuWrap{background: #0044af;}
 #contents .container>ul>li:nth-child(7){background: #2f3;background-image: url(../images/sch_03.png);position: relative;}
 #contents .container>ul>li:nth-child(7) a{display: block;width: 50px;height: 50px;_background: red;position: absolute;
 				right: 50%;top:50%;margin-right: -25px;margin-top: -15px;text-indent: -9999px}
-
+/*<iframe width="560" height="315" src="https://www.youtube.com/embed/G9hAGBfjlnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+*/
 
 #contents .container>ul>li:nth-child(8){background: pink;width: 75%;margin-bottom: 20px;}
 #contents .container .visual .visualtxt02{position: absolute;top:40px;left:50px;}
