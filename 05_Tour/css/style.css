@@ -2,6 +2,8 @@
 
 body nav.Hdr{font-family: 'Archivo Narrow', sans-serif;}
 body .contentsOne{font-family: 'Black Han Sans', sans-serif;}
+body .contentsOne .bookWrapper{font-family: none;font-weight: bold}
+/*body .contentsOne:not(:.bookWrap){font-family: 'Black Han Sans', sans-serif;}*/
 
 .overlay{width: 265px;height: 260px;background-color:rgba(135,94,0,.5);
 		transition: .1s;color: white;right: 0px;}
@@ -12,7 +14,12 @@ body .contentsOne{font-family: 'Black Han Sans', sans-serif;}
 nav.Hdr{background-image: url(../images/01_bgplane.png);background-repeat: no-repeat;background-size: 100%}
 .Hdrtxt{width: 1100px;_background: red;height: 87px;margin: 0 auto;position: relative;}
 .Hdrtxt .logo{background: white;width: 50px;height: 50px;position: absolute;top: 20px;border-radius: 25px}
-.Hdrtxt .search{width: 300px;height: 30px;background: white;border-radius: 15px;position: absolute;top: 30px;left: 320px;}
+.searchInp{width: 400px;height: 50px;border: 3px solid #000;border-radius: 25px;text-indent: 80px;font-size: 18px;font-weight: bold;
+				box-shadow: 10px 10px 15px #000; background:white;position: relative;z-index: 1}
+.searchBTN{width: 20px;height: 20px;background-image: url(../images/search.jpg);text-indent: -9999px;border: 0 none;
+				position: absolute;right: 10px;top: 15px;z-index: 1}
+.searchTitle{width: 60px;height: 20px;background-image: url(../images/searchtext.jpg);text-indent: -9999px;position: absolute;top: 15px;left: 15px;z-index: 2}
+.wrap{position: absolute;_background: aqua;width: 400px;height: 50px;left: 45%;top: 50%;transform: translate(-50% ,-50%);z-index: 1;}
 .Hdrtxt .tel{color: white;font-weight: bold;font-size: 1.8em;position: absolute;top: 25px;right: 150px;}
 .Hdrtxt h2{color: white; padding: 15px 0 0 60px;font-size: 2em}
 .Hdrtxt p{color: white;font-size: 0.8em;padding: 0 0 0 75px;}
@@ -33,15 +40,34 @@ nav.body{height: 1330px;_background: yellow;background-image:/*url(../images/00b
 	 padding-top: 60px;}
 nav.body .contentsOne{width: 1100px;height: 575px;_background: #ff0;_opacity: 0.5;margin: 0 auto;position: relative;
 	margin-bottom: 20px;z-index: 0}
-.contentsOne .reserv{width: 550px;height: 300px;background: white;margin-bottom: 15px;}
+.contentsOne .bookWrapper .airport{padding-top: 15px;}
+.contentsOne .bookWrapper{width: 550px;height: 300px;background: white;margin-bottom: 15px;position: relative;}
+.contentsOne .bookWrapper .bx-pager{width: 150px;height: 300px;position: absolute;left: 0;top: 0;}
+.bx-pager a{display: block;height: 25%;line-height:75px;_border-bottom: 1px solid #222;text-align:right;padding-right: 10px;color: white}
+.bx-pager a:first-child{color:#777}
+.bx-pager a:last-child{border-bottom: 0 none;}
+.bx-pager a:nth-child(2){background:#006599;}
+.bx-pager a:nth-child(3){background: #0099cb}
+.bx-pager a:nth-child(4){background: #0099cb}
+.contentsOne .bookWrapper .form{width: 400px;position: absolute;right: 0;}
+.formlayer{width: 350px;margin: 0 auto;}
+.formlayer fieldset{margin-bottom: 10px;}
+.formlayer label{display: block;padding: 5px 0}
+.formlayer select{width: 100%;height: 40px;font-size: .8em;text-indent: 10px; border-radius: 10px}
+.formlayer .left, .formlayer .right{float: left;width: 170px;}
+.formlayer .left{margin-right: 10px;}
+.formlayer .left input, .formlayer .right input{width: 100%;border-radius: 10px;height: 40px;text-indent: 10px;font-size: 1em;border: 1px solid #aaa; font-weight: bold}
+.formlayer .BTN{width: 100%;height: 40px;border:0 none;cursor: pointer;background-color: orange;color: white;font-weight: bold;font-weight: 1em;border-radius: 20px;transition: .5s}
+.formlayer .BTN:hover{transform: translate(2px, 2px);box-shadow: 5px 5px #cdcdcd}
+
+
 .contentsOne .countryWrap{width: 560px;height: 260px;_background: aqua;}
-.countryWrap ul{}
 .countryWrap ul li{float: left;}
 .countryWrap ul li.france{background: blue;width: 265px;height: 260px;margin-right: 10px;position: relative;overflow: hidden;}
 .countryWrap ul li.france img.img{width: 100%;height: 100%;}
 .countryWrap ul li.france .dsc{width: 265px;height: 260px;background: #152630;position: absolute;font-size: 17px;top: 220px;transition: 0.9s;}
 .countryWrap ul li.france .dsc ul{padding: 10px 0 10px 60px;}
-.countryWrap ul li.france .dsc ul li{float: left; color: white;padding-right: 20px;}
+.countryWrap ul li.france .dsc>ul>li{float: left; color: white;padding-right: 20px;}
 .countryWrap ul li.france .dsc ul li.dollor{color: #549253;}
 .countryWrap ul li.france .dsc ul li.dollor a{color: #566467;padding-left: 10px}
 .countryWrap ul li.france:hover .dsc{top: 0;background-color: rgb(21,38,48,.5)}
@@ -52,13 +78,13 @@ nav.body .contentsOne{width: 1100px;height: 575px;_background: #ff0;_opacity: 0.
 .countryWrap ul li.japan img.img{width: 100%;height: 100%;}
 .countryWrap ul li.japan .dsc{width: 265px;height: 260px;background: #152630;position: absolute;font-size: 17px;top: 220px;transition: 0.9s;}
 .countryWrap ul li.japan .dsc ul{padding: 10px 0 10px 60px;}
-.countryWrap ul li.japan .dsc ul li{float: left; color: white;padding-right: 30px;}
+.countryWrap ul li.japan .dsc>ul>li{float: left; color: white;padding-right: 30px;}
 .countryWrap ul li.japan .dsc ul li.yan{color: #549253;}
 .countryWrap ul li.japan .dsc ul li.yan a{color: #566467;padding-left: 10px}
 .countryWrap ul li.japan:hover .dsc{top: 0;background-color: rgb(21,38,48,.5)}
 .countryWrap ul li.japan:hover ul li.yan{color: #6abb6a}
 
-.contentsOne .txt{width: 550px;height: 230px;_background: gray;top: 20px;right: 0;position: absolute;z-index: 0}
+.contentsOne .txt{width: 550px;height: 230px;_background: gray;top: 20px;right: 0;position: absolute;z-index: -2}
 .contentsOne .txt h1{font-size: 4.2em;padding: 50px 0 0 40px;margin-bottom: 20px;}
 .contentsOne .txt p{font-size: 2em;padding-left: 40px;}
 .img01{position: absolute;right: 0px;}
@@ -73,24 +99,75 @@ nav.body .contentsOne{width: 1100px;height: 575px;_background: #ff0;_opacity: 0.
 		100%{transform: translateY(0);}
 		}
 
+.img04{position: absolute;left: -100px;}
+.img04{animation-name:ballonFour;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+		}
+@keyframes ballonFour{
+		0%{transform: translateY(50px);}
+		100%{transform: translateY(0);}
+		}
+
 nav.body .contentsTwo{width: 1100px;height: 570px;_background: #ff0;margin: 0 auto;_opacity: 0.5;position: relative;z-index: 1}
-.contentsTwo ul li{float: left;margin-right: 20px;}
+.contentsTwo>ul>li{float: left;margin-right: 20px;}
 .contentsTwo ul li:last-child{margin-right: 0;}
 
 .contentsTwo .Hilton{width: 260px;height: 275px;background: red;}
 .contentsTwo .Hilton img{width: 100%;height: 275px;}
 .contentsTwo .Disney{width: 260px;height: 275px;background: green;}
 .contentsTwo .Disney img{width: 260px;height: 275px;}
-.contentsTwo .box3{width: 260px;height: 275px;background: pink;}
-.contentsTwo .box4{width: 260px;height: 275px;background: lime;}
+.contentsTwo .weather{width: 260px;height: 275px;background: pink;}
+
+.contentsTwo .sanpaulo{width: 260px;height: 275px;background:white;}
+.contentsTwo .sanpauloTwo{_display: none;position: absolute;transform: scale(0);transition: .5s}
+.contentsTwo .sanpaulo:hover .sanpauloTwo{display: block;z-index: 2;width: 100%;height: 100%;transform: scale(1);}
+
 .contentsTwo .secondR{padding-top: 20px;}
 .contentsTwo .box5{width: 260px;height: 275px;background: gray;}
 .contentsTwo .box6{width: 260px;height: 275px;background: purple;}
 .contentsTwo .box7{width: 260px;height: 275px;background: crimson;}
 .contentsTwo .box8{width: 260px;height: 275px;background: violet;}
 
+.contentsTwo>img.img02{position: absolute;left: 0;bottom: 10px;}
+.img02{animation-name:ballonTwo;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function:cubic-bezier(0.49, 0.3, 0.6, 0.69);
+		z-index: -1}
+@keyframes ballonTwo{
+0% {transform: translate(-8px,0);}
+25% {transform: translate(-15px,-5px);}
+50% {transform: translate(-10px,-10px);}
+75% {transform: translate(-5px,-15px);}
+100% {transform: translate(0,-21px)}}
 
 /*footer*/
 nav.footer .Wrap{width: 1100px;height: 60px;_background: brown;margin: 0 auto; margin-top: 20px;}
 nav.footer .Wrap ul{margin-bottom: 10px;}
 nav.footer .Wrap ul li{float: left;font-size: 14px;padding-right: 50px;}
+
+.plane{position: absolute;left:0;bottom: 0;z-index: 1}
+.plane{animation-name: air;
+				animation-duration: 3s;
+				animation-fill-mode: forwards;}
+
+@keyframes air{
+		0%{left: 0;bottom: 0;}
+		50%{left: 800px;bottom: 500px;}
+		100%{left: 1500px;bottom: 1300px;}
+	}
+
+.contentsTwo>img.img03{position: absolute;left: -450px;bottom: 0;opacity: .7}
+.img03{animation-name:ballonThr;
+		animation-duration: 12s;
+		animation-fill-mode: forwards
+	}
+@keyframes ballonThr{
+		0%{bottom: 0;}
+		50%{bottom: 750px;}
+		100%{bottom: 1500px;}
+		}

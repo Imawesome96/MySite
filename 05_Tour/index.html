@@ -6,6 +6,7 @@
 	<title>ASH TOUR</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.css">
 	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600&family=Black+Han+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
@@ -16,6 +17,13 @@
 				pager:false,
 				controls:true,
 			});
+
+			$(".sliderTwo").bxSlider({
+				auto:false,
+				controls:false,
+				pagerCustom:".bx-pager",
+				touchEnabled:false
+			})
 
 			$(".nxtBT").click(function(){
 				mySlider.goToNextSlide();
@@ -34,6 +42,8 @@
     border: none;
 }
 
+	fieldset{border: 0 none}
+	legend{display: block;position: absolute;left: 0;top: -9999px}
 	</style>
 </head>
 <body>
@@ -43,7 +53,13 @@
 		<div class="logo"></div>
 		<h2>TRAVEL</h2>
 		<p>하 이 미 디 어</p>
-		<div class="search"></div>
+		<div class="wrap">
+		<form action="#" method="get">
+			<label for="searchTxt" class="searchTitle">searchtitle</label>
+			<input type="text" id="seachTxt" name="search" placeholder="검색어 입력" class="searchInp">
+			<button type="submit" class="searchBTN">search</button>
+		</form>
+		</div>
 		<div class="tel">+82 02 123456789</div>
 		<img src="images/02_sns.png" alt="" class="img">
 	</div>
@@ -64,7 +80,70 @@
 <!-- body -->
 <nav class="body">
 	<div class="contentsOne">
-		<div class="reserv"></div>
+		<div class="bookWrapper">
+			<div class="form">
+				<ul class="sliderTwo">
+					<li class="airport">
+						<form action="#" method="get" class="formlayer">
+							<fieldset>
+								<legend>여행일정</legend>
+								<ul>
+									<li>
+										<label for="goto">Choose Country Where You Want to Visit</label>
+										<select name="nara" id="goto">
+											<option value="">Choose Country</option>
+											<option value="United States">USA</option>
+											<option value="South Korea">Republic of Korea</option>
+											<option value="UK">England</option>
+										</select>
+									</li>
+									<li>
+										<div class="left">
+											<label for="sdate">Departure Date</label>
+											<input type="date" id="sdate">
+										</div>
+										<div class="right">
+											<label for="sdate">Arrival Date</label>
+											<input type="date" id="sdate">
+										</div>
+									</li>
+									<li>
+										<div class="left">
+											<label for="seat">Seat</label>
+											<select name="seat" id="seat">
+												<option value="Economy">Economy</option>
+												<option value="Business">Business</option>
+												<option value="First">First</option>
+											</select>
+										</div>	
+										<div class="right">
+											<label for="num">Number of People</label>
+											<input type="number" id="num">
+										</div>
+									</li>
+								</ul>
+							</fieldset>
+							<button type="submit" class="BTN"><i class="fas fa-search"></i>Search</button>
+						</form>
+					</li>
+					<li>
+						<img src="images/yanolja.png" alt="">
+					</li>
+					<li>
+						<img src="images/socar.png" alt="">
+					</li>
+					<li>
+						<img src="images/resort.png" alt="">
+					</li>
+				</ul>
+			</div>
+			<div class="bx-pager">
+				<a href="#" data-slide-index="0"><i class="fas fa-plane" style="padding-right: 50px;color: #0065a8"></i>Airport</a>
+				<a href="#" data-slide-index="1"><i class="fas fa-hotel" style="padding-right: 63px;"></i>Hotel</a>
+				<a href="#" data-slide-index="2"><i class="fas fa-car" style="padding-right: 40px;"></i>Rent Car</a>
+				<a href="#" data-slide-index="3"><i class="fas fa-umbrella-beach" style="padding-right: 55px;"></i>Resort</a>
+			</div>
+		</div>
 		<div class="countryWrap">
 			<ul class="clearfix">
 				<li class="france">
@@ -91,6 +170,7 @@
 			<h1>TRAVEL GO</h1>
 			<p>지금, 여행이 떠나고 싶으면?<br>성현이와 여행을 떠나자!</p>
 			<img src="images/content2.png" alt="" class="img01">
+			<img src="images/content1.png" alt="" class="img04">
 		</div>
 	</div>
 
@@ -136,8 +216,21 @@
 					</li>
 				</ul>
 			</li>
-			<li class="box3"></li>
-			<li class="box4"></li>
+			<li class="weather">
+				<img src="images/sun.jpg" alt="">
+			</li>
+			<li class="sanpaulo" style="position: relative;overflow: hidden;">
+				<div style="position: absolute; padding: 40px 0 0 20px;z-index: 2;font-size: 1.1em;font-weight: bold">
+					<p>"남미여행은 처음이였는데...<br>황홀했어요..<br>하이미디어 덕분에 잘 다녀<br>왔습니다!"</p>
+					<img src="images/star3.png" alt="">
+				</div>
+				<img src="images/sanpaulo.png" alt="" style="position: absolute; right: -10px;top: 40px;">
+				<img src="images/sanpauloTwo.png" alt="" class="sanpauloTwo">
+				<div style="position: absolute;width: 260px;height: 60px;background:#4c5fd7;bottom: 0;padding: 5px 0 0 15px">
+					<p style="color:#f46f30;font-size: 1.1em;font-weight: bold">instagram 여행후기</p>
+					<p style="color:white">(안성현님)</p>
+				</div>
+			</li>
 		</ul>
 		<ul class="secondR">
 			<li class="box5"></li>
@@ -145,6 +238,9 @@
 			<li class="box7"></li>
 			<li class="box8"></li>
 		</ul>
+
+		<img src="images/content5.png" alt="" class="img02">
+		<img src="images/content6.png" alt="" class="img03">
 	</div>
 
 	<!-- footer -->
@@ -160,13 +256,8 @@
 			<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, minima suscipit cum <br> Rem ipsam consequatur nesciunt voluptate quasi architecto impedit illum.</div>
 		</div>
 	</nav>
-
-
 </nav>
 
-
-
-
-
+<img src="images/reallyAir.png" alt="" class="plane">
 </body>
 </html>
