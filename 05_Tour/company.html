@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>ASH TOUR</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600&family=Black+Han+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				pager:false,
+				controls:true,
+			});
+
+			$(".sliderTwo").bxSlider({
+				auto:false,
+				controls:false,
+				pagerCustom:".bx-pager",
+				touchEnabled:false
+			})
+
+			$(".nxtBT").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prvBT").click(function(){
+				mySlider.goToPrevSlide();
+			});
+
+		});
+	</script>
+	<style>
+	.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+	fieldset{border: 0 none}
+	legend{display: block;position: absolute;left: 0;top: -9999px}
+	</style>
+</head>
+<body>
+<!-- header -->
+<div class="Hdr">
+	<div class="Hdrtxt">
+		<div class="logo"></div>
+		<h2>TRAVEL</h2>
+		<p>하 이 미 디 어</p>
+		<div class="wrap">
+		<form action="#" method="get">
+			<label for="searchTxt" class="searchTitle">searchtitle</label>
+			<input type="text" id="seachTxt" name="search" placeholder="검색어 입력" class="searchInp">
+			<button type="submit" class="searchBTN">search</button>
+		</form>
+		</div>
+		<div class="tel">+82 02 123456789</div>
+		<img src="images/02_sns.png" alt="" class="img">
+	</div>
+</div>
+<div class="MenuWrap">
+	<div class="Menu">
+		<ul class="clearfix">
+			<li><a href="index.html">여행도시</a></li>
+			<li><a href="#">호텔예약</a></li>
+			<li><a href="#">렌트카</a></li>
+			<li><a href="#">여행TIP</a></li>
+			<li><a href="company.html">회사소개</a></li>
+			<li><a href="#">커뮤니티</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="subCont">
+	
+</div>
+
+
+<!-- footer -->
+<div class="footer">
+	<div class="Wrap">
+		<ul class="clearfix">
+			<li>이용약관</li>
+			<li>개인정보취급방침</li>
+			<li>사이트맵</li>
+			<li>고객센터</li>
+			<li>광고 및 제휴문의</li>
+		</ul>
+		<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, minima suscipit cum <br> Rem ipsam consequatur nesciunt voluptate quasi architecto impedit illum.</div>
+	</div>
+</div>
+</body>
+</html>

@@ -11,15 +11,15 @@ body .contentsOne .bookWrapper{font-family: none;font-weight: bold}
 
 
 /*header*/
-nav.Hdr{background-image: url(../images/01_bgplane.png);background-repeat: no-repeat;background-size: 100%}
+.Hdr{background-image: url(../images/01_bgplane.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
 .Hdrtxt{width: 1100px;_background: red;height: 87px;margin: 0 auto;position: relative;}
 .Hdrtxt .logo{background: white;width: 50px;height: 50px;position: absolute;top: 20px;border-radius: 25px}
 .searchInp{width: 400px;height: 50px;border: 3px solid #000;border-radius: 25px;text-indent: 80px;font-size: 18px;font-weight: bold;
-				box-shadow: 10px 10px 15px #000; background:white;position: relative;z-index: 1}
+	box-shadow: 10px 10px 15px #000; background:white;position: relative;z-index: 1;}
 .searchBTN{width: 20px;height: 20px;background-image: url(../images/search.jpg);text-indent: -9999px;border: 0 none;
-				position: absolute;right: 10px;top: 15px;z-index: 1}
+	position: absolute;right: 10px;top: 15px;z-index: 1}
 .searchTitle{width: 60px;height: 20px;background-image: url(../images/searchtext.jpg);text-indent: -9999px;position: absolute;top: 15px;left: 15px;z-index: 2}
-.wrap{position: absolute;_background: aqua;width: 400px;height: 50px;left: 45%;top: 50%;transform: translate(-50% ,-50%);z-index: 1;}
+.wrap{position: absolute;_background: aqua;width: 400px;height: 50px;left: 40%;top: 50%;transform: translate(-50% ,-50%);z-index: 1;}
 .Hdrtxt .tel{color: white;font-weight: bold;font-size: 1.8em;position: absolute;top: 25px;right: 150px;}
 .Hdrtxt h2{color: white; padding: 15px 0 0 60px;font-size: 2em}
 .Hdrtxt p{color: white;font-size: 0.8em;padding: 0 0 0 75px;}
@@ -36,7 +36,7 @@ nav.Hdr{background-image: url(../images/01_bgplane.png);background-repeat: no-re
 
 /*body*/
 nav.body{height: 1330px;_background: yellow;background-image:/*url(../images/00bg_dot-1.gif),*/ url(../images/bg_sky.png);
-	background-repeat: /*repeat,*/no-repeat;background-size: /*auto,*/100%;background-position: 0 50%;
+	background-repeat: /*repeat,*/no-repeat;background-size: cover;background-position: center;
 	 padding-top: 60px;}
 nav.body .contentsOne{width: 1100px;height: 575px;_background: #ff0;_opacity: 0.5;margin: 0 auto;position: relative;
 	margin-bottom: 20px;z-index: 0}
@@ -46,9 +46,12 @@ nav.body .contentsOne{width: 1100px;height: 575px;_background: #ff0;_opacity: 0.
 .bx-pager a{display: block;height: 25%;line-height:75px;_border-bottom: 1px solid #222;text-align:right;padding-right: 10px;color: white}
 .bx-pager a:first-child{color:#777}
 .bx-pager a:last-child{border-bottom: 0 none;}
-.bx-pager a:nth-child(2){background:#006599;}
+.bx-pager a:nth-child(2){background: #0099cb}
 .bx-pager a:nth-child(3){background: #0099cb}
 .bx-pager a:nth-child(4){background: #0099cb}
+.bx-pager a:nth-child(2):hover {background: #006599}
+.bx-pager a:nth-child(3):hover {background: #006599}
+.bx-pager a:nth-child(4):hover {background: #006599}
 .contentsOne .bookWrapper .form{width: 400px;position: absolute;right: 0;}
 .formlayer{width: 350px;margin: 0 auto;}
 .formlayer fieldset{margin-bottom: 10px;}
@@ -119,17 +122,112 @@ nav.body .contentsTwo{width: 1100px;height: 570px;_background: #ff0;margin: 0 au
 .contentsTwo .Hilton img{width: 100%;height: 275px;}
 .contentsTwo .Disney{width: 260px;height: 275px;background: green;}
 .contentsTwo .Disney img{width: 260px;height: 275px;}
-.contentsTwo .weather{width: 260px;height: 275px;background: pink;}
+.contentsTwo .weather{width: 260px;height: 275px;background: pink;position: relative;}
+.contentsTwo .weather>img{height: 100%;width: 100%;}
+.contentsTwo .weather .box{height: 60px;width: 260px;background: red;position: absolute;bottom: 0;z-index: 2;background-color:rgba(21,38,48,0.5);color: white;padding: 5px 0 0 15px	}
+.contentsTwo .weather>.txt{position: absolute;color:white;font-size: 1.5em;padding-left: 95px;padding-top: 15px;}
+
 
 .contentsTwo .sanpaulo{width: 260px;height: 275px;background:white;}
 .contentsTwo .sanpauloTwo{_display: none;position: absolute;transform: scale(0);transition: .5s}
 .contentsTwo .sanpaulo:hover .sanpauloTwo{display: block;z-index: 2;width: 100%;height: 100%;transform: scale(1);}
 
 .contentsTwo .secondR{padding-top: 20px;}
-.contentsTwo .box5{width: 260px;height: 275px;background: gray;}
-.contentsTwo .box6{width: 260px;height: 275px;background: purple;}
-.contentsTwo .box7{width: 260px;height: 275px;background: crimson;}
-.contentsTwo .box8{width: 260px;height: 275px;background: violet;}
+.contentsTwo .tourinfo{width: 260px;height: 275px;background: gray;position: relative;overflow: hidden}
+.contentsTwo .tourinfo>img{width: 100%;height: 100%;position: absolute;transform: scale(1.2);transition: 0.4s}
+.contentsTwo .tourinfo .txt{position: absolute;padding-left: 90px;font-weight: bold;color: white;padding-top: 80px;z-index: 2;transition: 0.3s}
+.contentsTwo .tourinfo .txt>span{display: none;}
+.contentsTwo .tourinfo>.wrap{width: 40px;height: 40px;border: 3px solid #fff;
+			border-radius:20px;box-sizing: border-box;
+			background-color:skyblue;
+			position: absolute;left:50%;top:50%;
+			transform:translate(-50%,-50%);transition:0.3s;
+			z-index: 1}
+.wrap .bar1,.wrap .bar2{
+			width: 25px;height: 3px;
+			background-color: #fff;
+			border-radius:2px;
+			position: absolute;
+			left:50%;top:50%;transform:translate(-50%,-50%);}
+.wrap .bar2{transform:translate(-50%,-50%) rotate(90deg);}
+.contentsTwo .tourinfo>.bg{width: 100%;height: 100%;background: aqua;opacity: 0;transition: 0.4s}
+.tourinfo:hover img{transform: scale(1.4);}
+.tourinfo:hover .wrap{transform:translate(-50%,-50%) rotate(180deg);}
+.tourinfo:hover .bg{opacity: 0.4}
+.tourinfo:hover .txt{padding-top: 20px;}
+.tourinfo:hover .txt>span{display: block;color:#444}
+
+.contentsTwo .food{width: 260px;height: 275px;background: purple;position: relative;overflow: hidden}
+.contentsTwo .food>img{width: 100%;height: 100%;position: absolute;transform: scale(1.2);transition: 0.4s}
+.contentsTwo .food .txt{position: absolute;padding-left: 90px;font-weight: bold;color: white;padding-top: 80px;z-index: 2;transition: 0.3s}
+.contentsTwo .food .txt>span{display: none;}
+.contentsTwo .food>.wrap{width: 40px;height: 40px;border: 3px solid #fff;
+			border-radius:20px;box-sizing: border-box;
+			background-color:skyblue;
+			position: absolute;left:50%;top:50%;
+			transform:translate(-50%,-50%);transition:0.3s;
+			z-index: 1}
+.wrap .bar1,.wrap .bar2{
+			width: 25px;height: 3px;
+			background-color: #fff;
+			border-radius:2px;
+			position: absolute;
+			left:50%;top:50%;transform:translate(-50%,-50%);}
+.wrap .bar2{transform:translate(-50%,-50%) rotate(90deg);}
+.contentsTwo .food>.bg{width: 100%;height: 100%;background: blue;opacity: 0;transition: 0.4s}
+.food:hover>img{transform: scale(1.4);}
+.food:hover .wrap{transform:translate(-50%,-50%) rotate(180deg);}
+.food:hover .bg{opacity: 0.4}
+.food:hover .txt{padding-top: 20px;}
+.food:hover .txt>span{display: block;color:white;}
+
+.contentsTwo .home{width: 260px;height: 275px;background: purple;position: relative;overflow: hidden}
+.contentsTwo .home>img{width: 100%;height: 100%;position: absolute;transform: scale(1.2);transition: 0.4s}
+.contentsTwo .home .txt{position: absolute;padding-left: 90px;font-weight: bold;color: white;padding-top: 80px;z-index: 2;transition: 0.3s}
+.contentsTwo .home .txt>span{display: none;}
+.contentsTwo .home>.wrap{width: 40px;height: 40px;border: 3px solid #fff;
+			border-radius:20px;box-sizing: border-box;
+			background-color:skyblue;
+			position: absolute;left:50%;top:50%;
+			transform:translate(-50%,-50%);transition:0.3s;
+			z-index: 1}
+.wrap .bar1,.wrap .bar2{
+			width: 25px;height: 3px;
+			background-color: #fff;
+			border-radius:2px;
+			position: absolute;
+			left:50%;top:50%;transform:translate(-50%,-50%);}
+.wrap .bar2{transform:translate(-50%,-50%) rotate(90deg);}
+.contentsTwo .home>.bg{width: 100%;height: 100%;background:gray;opacity: 0;transition: 0.4s}
+.home:hover>img{transform: scale(1.4);}
+.home:hover .wrap{transform:translate(-50%,-50%) rotate(180deg);}
+.home:hover .bg{opacity: 0.4}
+.home:hover .txt{padding-top: 20px;}
+.home:hover .txt>span{display: block;color:white;}
+
+.contentsTwo .thumb{width: 260px;height: 275px;background: purple;position: relative;overflow: hidden}
+.contentsTwo .thumb>img{width: 100%;height: 100%;position: absolute;transform: scale(1.2);transition: 0.4s}
+.contentsTwo .thumb .txt{position: absolute;padding-left: 90px;font-weight: bold;color: white;padding-top: 80px;z-index: 2;transition: 0.3s}
+.contentsTwo .thumb .txt>span{display: none;}
+.contentsTwo .thumb>.wrap{width: 40px;height: 40px;border: 3px solid #fff;
+			border-radius:20px;box-sizing: border-box;
+			background-color:skyblue;
+			position: absolute;left:50%;top:50%;
+			transform:translate(-50%,-50%);transition:0.3s;
+			z-index: 1}
+.wrap .bar1,.wrap .bar2{
+			width: 25px;height: 3px;
+			background-color: #fff;
+			border-radius:2px;
+			position: absolute;
+			left:50%;top:50%;transform:translate(-50%,-50%);}
+.wrap .bar2{transform:translate(-50%,-50%) rotate(90deg);}
+.contentsTwo .thumb>.bg{width: 100%;height: 100%;background:green;opacity: 0;transition: 0.4s}
+.thumb:hover>img{transform: scale(1.4);}
+.thumb:hover .wrap{transform:translate(-50%,-50%) rotate(180deg);}
+.thumb:hover .bg{opacity: 0.4}
+.thumb:hover .txt{padding-top: 20px;}
+.thumb:hover .txt>span{display: block;color:white;}
 
 .contentsTwo>img.img02{position: absolute;left: 0;bottom: 10px;}
 .img02{animation-name:ballonTwo;
@@ -146,9 +244,9 @@ nav.body .contentsTwo{width: 1100px;height: 570px;_background: #ff0;margin: 0 au
 100% {transform: translate(0,-21px)}}
 
 /*footer*/
-nav.footer .Wrap{width: 1100px;height: 60px;_background: brown;margin: 0 auto; margin-top: 20px;}
-nav.footer .Wrap ul{margin-bottom: 10px;}
-nav.footer .Wrap ul li{float: left;font-size: 14px;padding-right: 50px;}
+.footer .Wrap{width: 1100px;height: 60px;_background: brown;margin: 0 auto; margin-top: 20px;}
+.footer .Wrap ul{margin-bottom: 10px;}
+.footer .Wrap ul li{float: left;font-size: 14px;padding-right: 50px;}
 
 .plane{position: absolute;left:0;bottom: 0;z-index: 1}
 .plane{animation-name: air;
@@ -171,3 +269,4 @@ nav.footer .Wrap ul li{float: left;font-size: 14px;padding-right: 50px;}
 		50%{bottom: 750px;}
 		100%{bottom: 1500px;}
 		}
+
