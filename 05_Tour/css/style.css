@@ -15,7 +15,7 @@ body .contentsOne .bookWrapper{font-family: none;font-weight: bold}
 .Hdrtxt{width: 1100px;_background: red;height: 87px;margin: 0 auto;position: relative;}
 .Hdrtxt .logo{background: white;width: 50px;height: 50px;position: absolute;top: 20px;border-radius: 25px}
 .searchInp{width: 400px;height: 50px;border: 3px solid #000;border-radius: 25px;text-indent: 80px;font-size: 18px;font-weight: bold;
-	box-shadow: 10px 10px 15px #000; background:white;position: relative;z-index: 1;}
+	box-shadow: 3px 3px 15px #000; background:white;position: relative;z-index: 1;}
 .searchBTN{width: 20px;height: 20px;background-image: url(../images/search.jpg);text-indent: -9999px;border: 0 none;
 	position: absolute;right: 10px;top: 15px;z-index: 1}
 .searchTitle{width: 60px;height: 20px;background-image: url(../images/searchtext.jpg);text-indent: -9999px;position: absolute;top: 15px;left: 15px;z-index: 2}
@@ -25,13 +25,22 @@ body .contentsOne .bookWrapper{font-family: none;font-weight: bold}
 .Hdrtxt p{color: white;font-size: 0.8em;padding: 0 0 0 75px;}
 .Hdrtxt img.img{position: absolute;right: 0;top: 33px;}
 /*hdmenu*/
-.MenuWrap{width: 100%;background: #fcfcfc;border-top: 3px solid #055685;border-bottom: 3px solid #0e73a7;}
+.MenuWrap{width: 100%;background: #fcfcfc;border-top: 3px solid #055685;border-bottom: 3px solid #0e73a7;position: relative;}
+.MenuWrap .menubar{width: 100%;position: absolute;height: 30px;background: black;bottom: -30px;opacity: 0.3;display: none;}
+.MenuWrap:hover .menubar{display: block;}
+
 .MenuWrap .Menu{width: 1100px;margin: 0 auto;background: #fcfcfc;}
-.Menu ul li{float: left;text-align: center;border-right: 1px solid #e8e8e8;}
-.Menu ul li:first-child{border-left: 1px solid #e8e8e8;}
-.Menu ul li a{display: block;width: 182px;height: 60px;line-height: 60px;font-weight: bold;font-size: 1.1em}
-.Menu ul li:hover{background: #C4FDFF;}
-.Menu ul li a:hover{font-size: 1.2em}
+.Menu>ul>li{float: left;text-align: center;border-right: 1px solid #e8e8e8;}
+.Menu>ul>li:first-child{border-left: 1px solid #e8e8e8;}
+.Menu>ul>li>a{display: block;width: 182px;height: 60px;line-height: 60px;font-weight: bold;font-size: 1.1em}
+.Menu>ul>li:hover{background: #C4FDFF;}
+.Menu>ul>li>a:hover{font-size: 1.2em}
+.Menu>ul{position: relative;}
+.Menu>ul .smenu{position: absolute;display: none;width:400px;_background: #000;}
+.Menu>ul .smenu>li{float: left;width: 80px;padding-top: 5px;}
+.Menu>ul>li:hover .smenu{display: block;}
+.Menu>ul .smenu>li>a{display: block;color: white}
+.Menu>ul .smenu>li>a:hover{font-weight: bold;_background: #ededed;}
 
 
 /*body*/
@@ -259,7 +268,7 @@ nav.body .contentsTwo{width: 1100px;height: 570px;_background: #ff0;margin: 0 au
 		100%{left: 1500px;bottom: 1300px;}
 	}
 
-.contentsTwo>img.img03{position: absolute;left: -450px;bottom: 0;opacity: .7}
+.contentsTwo>img.img03{position: absolute;left: -450px;bottom: 0;}
 .img03{animation-name:ballonThr;
 		animation-duration: 12s;
 		animation-fill-mode: forwards
@@ -270,3 +279,17 @@ nav.body .contentsTwo{width: 1100px;height: 570px;_background: #ff0;margin: 0 au
 		100%{bottom: 1500px;}
 		}
 
+.subCont{width: 100%;height: 1180px;background:#efefef;}
+.subCont .subimg{width: 100%;height: 329px;background-image: url(../images/subimg01.png); background-position: center;background-repeat: no-repeat;background-size: cover }
+.subimg h2{font-size: 4em;color: white;text-align: center;padding-top: 50px;}
+.subimg h2 i{font-size: 1.1em;}
+.subimg .line{height: 7px;width: 390px;background:white;margin: 0 auto;margin-top: -10px;}
+.subimg p{color: white; text-align: center;padding-top: 10px;font-size: 1.2em}
+.subimg p span{font-weight: bold}
+.subCont .mainpage{width: 1100px;height: 880px;background: white;margin: 0 auto;position: relative;top: -70px;transition: .4s}
+.subCont .mainpage{background-image: url(../images/submain01.png);background-position: center;background-repeat: no-repeat;background-size:70% 90%}
+.mainpage:hover{box-shadow: 20px 20px #0e74a5;}
+.footerTwo{background: #efefef;}
+.footerTwo .Wrap{width: 1100px;height: 80px;margin: 0 auto;}
+.footerTwo .Wrap ul li{float: left;font-size: 14px;padding-right: 50px;}
+.footerTwo .Wrap ul{margin-bottom: 10px;}
