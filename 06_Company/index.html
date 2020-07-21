@@ -6,26 +6,65 @@
 	<title>Company</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var mySlider = $(".slider").bxSlider({
+
+			});
+			$(".right").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".left").click(function(){
+				mySlider.goToPrevSlide();
+			});
+		});
+	</script>
+	<style>
+	.bx-wrapper{
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:none;
+	}
+	.bx-pager{margin-bottom: 50px;}
+	</style>
 </head>
 <body>
+	<!-- header -->
+	<div class="sliderWrap">
+		<ul class="slider">
+			<li>
+				<img src="images/hdimg.jpg" alt="">
+			</li>
+			<li>
+				<img src="images/videoconf01.jpg" alt="">
+			</li>
+		</ul>
+		<img src="images/nxtBTN.png" alt="" class="right" width="50px">
+		<img src="images/preBTN.png" alt="" class="left" width="50px">
+	</div>
 	<div class="headerWrap">
 		<div class="menuWrap">
-			<h3>LOGO</h3>
-			<ul>
-				<li><a href="#">회사소개</a></li>
-				<li><a href="#">윤리경영</a></li>
-				<li><a href="#">제품/기술</a></li>
-				<li><a href="#">지속가능성</a></li>
-				<li><a href="#">홍보채녈</a></li>
-				<li><a href="#">인재채용</a></li>
+			<h2><a href="#">ZOOM</a></h2>
+			<ul class="clearfix">
+				<li><a href="#">Sign In</a></li>
+				<li><a href="#">Sign Up</a></li>
 			</ul>
-			<div class="lang">
-				<ul>
-					<li><a href="#">KOR</a></li>
-					<li><a href="#">ENG</a></li>
-				</ul>
-			</div>
 		</div>
+	</div>
+
+	<!-- menubar -->
+	<div class="barWrap">
+		<ul>
+			<li><a href="#">Group</a></li>
+			<li><a href="#">Private</a></li>
+			<li><a href="#">Price</a></li>
+			<li><a href="#">Downloads</a></li>
+			<li><a href="#">Support</a></li>
+		</ul>
 	</div>
 </body>
 </html>
