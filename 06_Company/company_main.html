@@ -6,9 +6,12 @@
 	<title>Company</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(document).ready(function(){
 			var mySlider = $(".slider").bxSlider({
@@ -20,6 +23,12 @@
 			// $(".left").click(function(){
 			// 	mySlider.goToPrevSlide();
 			// });
+			$(".modal").colorbox({rel:"modal"});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:900,
+				innerHeight:537,
+			});
 		});
 	</script>
 	<style>
@@ -72,10 +81,10 @@
 		<ul class="clearfix">
 			<li>
 				<img src="images/company_icon01.png" alt="">
-				<h2><a href="#">About Us</a></h2>
+				<h2><a href="companysub.html" target="blank">About Us</a></h2>
 			</li>
 			<li>
-				<img src="images/facetime.png" alt="">
+				<a href="https://www.youtube.com/embed/Tzfo-sJmP6w" class="youtube" title="facezoom"><img src="images/facetime.png" alt=""></a>
 			</li>
 			<li>
 				<h3>NEWS</h3>
@@ -148,5 +157,36 @@
 			</div>
 		</div>
 	</div>
+	<div class="containerThr">
+		<div class="wrapperThr">
+			<h2>Why ZOOM?</h2>
+			<div class="imgbox">
+				<ul class="clearfix">
+					<li><i class="fas fa-globe"></i></li>
+					<li><i class="fas fa-user-shield"></i></li>
+					<li><i class="fas fa-thumbs-up"></i></li>
+					<li><i class="fas fa-dollar-sign"></i></li>
+				</ul>
+			</div>
+			<div class="txtbox">
+				<ul class="clearfix">
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, et!</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, saepe.</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptate!</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="lastSec">
+		<div class="img">
+		<a href="https://www.youtube.com/embed/hHxv0FxUZbo" class="youtube" title="zoom"><img src="images/videovideo.jpg" alt=""></a>
+		</div>
+	</div>
+<footer>
+	<div class="footer">
+		<img src="images/footer.jpg" alt="">
+	</div>
+</footer>
 </body>
 </html>

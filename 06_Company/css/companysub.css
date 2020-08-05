@@ -5,25 +5,33 @@
 .img .txtBox p{position: absolute;left: 44%;transform: translateX(-50%);top: 59%;transform: translateY(-50%);color: white;text-shadow:0 0 10px blueviolet}
 .hdrTop{position: absolute;top: 78px;left: 50%;transform: translateX(-50%);}
 .hdrTop .menuTop{width: 1250px;}
-	.menuTop h1 a{width: 100px;display: block;float: left;padding-right: 400px;color: white}
+	.menuTop h1 a{width: 100px;display: block;float: left;padding-right: 400px;color: skyblue}
 	.menuTop .wrapper{float: left;}
 	.menuTop .wrapper>ul>li{float: left;width: 100px;text-align: center;line-height: 40px;margin-right: 20px;}
-	.menuTop .wrapper>ul>li>a{color: white;transition: 1s}
-	.menuTop .wrapper>ul>li>a:hover{color: white;opacity: 0.5;}
+	.menuTop .wrapper>ul>li>a{color: skyblue;transition: 1s}
+	.menuTop .wrapper>ul>li>a:hover{color: blue;opacity: 0.5;}
 	.menuTop .langBox .box1,
-	.menuTop .langBox .box2{border: 1px solid #fff;width: 40px;height:25px;float: right;margin-top: 7px;border-color: #b8307c;transition: 0.4s}
+	.menuTop .langBox .box2{border: 1px solid #fff;width: 40px;height:25px;float: right;margin-top: 7px;border-color: skyblue;transition: 0.4s}
 	.menuTop .langBox .box1:hover,
-	.menuTop .langBox .box2:hover{background:#b8307c}
+	.menuTop .langBox .box2:hover{background:skyblue}
 	.menuTop .langBox .box1{border-left: none;}
 	.menuTop .langBox .box1>a,
-	.menuTop .langBox .box2>a{font-size: 12px;display: block;text-align: center;line-height: 25px;color: white}
+	.menuTop .langBox .box2>a{font-size: 12px;display: block;text-align: center;line-height: 25px;color: blue}
 
 /*menuTop*/
 .menuTop{width: 100%;position: relative;top: -56px;}
 .menuTop .menuWrap{width: 1250px;margin: 0 auto}
-.menuTop .menuWrap ul>li{float: left;width: 312.5px;text-align: center;line-height: 50px;border: 1px solid #999;border-right: none;border-top: none;background:#eaeaea;border-bottom: 2px solid #b8307c;transition: 0.5s}
+.menuTop .menuWrap ul>li{float: left;width: 312.5px;text-align: center;line-height: 50px;border: 1px solid #999;border-right: none;border-top: none;background:#eaeaea;border-bottom: 2px solid skyblue;transition: 0.5s}
 .menuTop .menuWrap ul>li>a{display: block;}
-.menuTop .menuWrap ul>li:last-child{border: 1px solid #999;border-bottom: 2px solid #b8307c;border-top: none;border-right: none;}
+.menuTop .menuWrap ul>li:last-child{border: 1px solid #999;border-bottom: 2px solid skyblue;border-top: none;border-right: none;}
 .menuTop .menuWrap ul>li:first-child{border-left: none;}
-.menuTop .menuWrap ul>li:hover{background:#b8307c;font-weight: bold;}
-.menuTop .menuWrap ul>li>a:hover{color: white}
+.menuTop .menuWrap ul>li:hover{background:aqua;}
+.menuTop .menuWrap ul>li>a:hover{color: white;font-weight: bold}
+
+/*img*/
+.img{width: 100%;}
+.subImg{width: 800px;height: 700px;margin: 0 auto}
+
+/*footer*/
+footer{width: 100%;height: 230px;background:#38394d}
+footer .footer{width: 1200px;margin: 0 auto}
