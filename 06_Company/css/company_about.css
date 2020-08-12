@@ -35,3 +35,12 @@
 /*footer*/
 footer{width: 100%;height: 230px;background:#38394d}
 footer .footer{width: 1200px;margin: 0 auto}
+
+/*support*/
+.search{width: 100%;background:#e8f1f6;height: 120px;}
+.search .wrap{width: 1200px;margin: 0 auto}
+.search form{text-align: center;line-height: 120px;}
+.search form input.searchInp{width: 500px;height: 30px;border: 1px solid aqua;}
+.support{width: 100%;}
+.support .supportimg{width: 1200px;margin: 0 auto;margin: 20px auto}
+.support .supportimg img{margin: 0 auto;display: block;}

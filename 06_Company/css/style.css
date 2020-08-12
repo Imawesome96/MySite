@@ -48,6 +48,9 @@
 .container ul li:nth-child(7){width: 600px;height: 275px;background:red;position: relative;}
 .container ul li:nth-child(7) .txt{position: absolute;top: 0;color:white;padding: 50px 0 0 40px}
 .container ul li:nth-child(7) .txt h1{padding-bottom: 30px;}
+.container ul li:nth-child(7) .txt h3{padding-bottom: 20px;}
+.container ul li:nth-child(7) .txt h4 a{color:white;width: 70px;text-align: center;line-height: 30px;border: 1px solid white;display: block;transition: .4s}
+.container ul li:nth-child(7) .txt a:hover{background:#B2EBF4;color:gray;}
 .container ul li:nth-child(8){width: 300px;height: 550px;background:#dfe1e6;position: relative;}
 .container ul li:nth-child(8) img{position: absolute;bottom: 0;}
 .container ul li:nth-child(8)div{position: absolute;}
