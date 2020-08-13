@@ -6,28 +6,83 @@
 	<title>Hilton Hotel</title>
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/all.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.fullpage.js"></script>
 	<script>
 		$(function(){
 			$("#fullpage").fullpage({
 				anchors:["a1pg","a2pg","a3pg","a4pg"]
+			});
+
+			$(".aisa").click(function(){
+				$(".smenu").show(2000);
 			})
-		})
+		});
 	</script>
 	<style>
 		.section{background-repeat: no-repeat;background-position:200px;background-size:cover}
 
-		div#fullpage #page1{background-image: url(images/hilton_BS01.jpg);}
+		#page1{background-image: url(images/hilton_BS01.jpg);}
+		#page2{background-image: url(images/location_bg01.jpg);}
+
 
 		nav#navSide .sign{width: 100%;height: 30px;position: absolute;line-height: 50px;}
 		nav#navSide .sign .right{position: absolute;right: 20px;color:white;font-size: 12px}
 		nav#navSide .sign .left{position: absolute;left: 20px;color: white;font-size: 12px}
+		nav#navSide .sign .left:hover,nav#navSide .sign .right:hover{font-weight: bold}
 		nav#navSide .logo{width: 190px;height: 165px;display: block;margin: 190px 50px 50px auto;}
 		nav#navSide .logo{background-image: url(images/logo01.png);background-repeat: no-repeat;background-size: cover}
 		nav#navSide{position: fixed;z-index:1;height: 100%;width: 290px;background:#051f38}
-		nav#navSide li a{display: block;line-height: 100px;color:white;text-align: center;}
+		nav#navSide li a{display: block;line-height: 100px;color:white;text-align: center;transition: .3s}
+		nav#navSide li a:hover{font-weight: bold}
 		nav#navSide p{color: #777;text-align: center;padding-top: 100px;}
+
+
+		#onVone .check{position: absolute;top: 23%;left: 40%;}
+		#onVone .check input{text-align: center;font-size: 1.5em;font-weight: bold;border: none;background-color:transparent;}
+		#onVone>.check>ul>li{float: left;padding-right: 5px;}
+		#onVone>.check>ul>p{display: block;width: 100px;float: left;line-height: 40px;font-size: 1.5em;font-weight: bold;color: white;}
+		#onVone>.check>ul>li #num01{width: 50px;height: 40px;}
+		#onVone>.check>ul>li #num02{width: 50px;height: 40px;}
+		fieldset{border: 0 none}
+		legend{display: block;position: absolute;left: 0;top: -9999px}
+		#onVone .formlayer{width: 1200px;position: absolute;left: 40%;top: 30%;}
+		#onVone .formlayer li{float: left;padding-right: 30px;}
+		#onVone .formlayer li:nth-child(1) .searchInp{width: 400px;height: 40px;border: 3px solid #051f38;border-radius:30px;text-align: center;}
+		#onVone .formlayer li:nth-child(2) #checkin{width: 200px;height: 40px;border: 3px solid #051f38;border-radius: 30px;text-align: center;}
+		#onVone .formlayer li:nth-child(3) #checkout{width: 200px;height: 40px;border: 3px solid #051f38;border-radius: 30px;text-align: center;}
+		#onVone .formlayer li:nth-child(4) .click a{width: 40px;height: 40px;border-radius: 20px;background:#051f38;display: block;transition:0.5s}
+		#onVone .formlayer li:nth-child(4) .click a i{display: block;text-align: center;line-height: 40px;color:white;}
+		#onVone .formlayer li:nth-child(4) .click a:hover{font-size: 1.2em;background:gray}
+
+		#onVtwo .country{position: absolute;left: 60%;top: 35%;transform:translateX(-50%);width: 1200px;}
+		#onVtwo .country li{float: left;width: 250px;line-height: 50px;border: 3px solid #051f38;text-align: center;margin-right: 60px;}
+		#onVtwo .country li:last-child{margin-right: 0;}
+		#onVtwo .country li a{font-size: 1.5em;color:white;display: block;transition:0.5s}
+		#onVtwo .country li a:hover{background: #45576b;font-weight: bold}
+		#onVtwo .smenu{display: none;}
+		#onVtwo .smenu{position: absolute;left: 60%;top: 50%;transform:translateX(-50%);width: 1200px;}
+		#onVtwo .smenu li{float: left;height: 250px;width: 250px;border: 2px solid #000;border-radius: 50%;margin-right: 60px;}
+		#onVtwo .smenu li:last-child{margin-right: 0;}
+		#onVtwo .smenu li:first-child{background-image: url(images/skorealandmark.jpg);background-position: center;background-size: 150%;background-repeat: no-repeat;position: relative;overflow:hidden;}
+		#onVtwo .smenu li>.korea{width: 150px;background:#051f38;border: 2px solid #051f38;position: absolute;right: -5px;top: 50%;transform:translateY(-50%);transition:0.5s}
+		#onVtwo .smenu li>.korea p{text-align: center;line-height: 50px;color: white;font-weight: bold;transition: 0.5s;}
+		#onVtwo .smenu li>.korea:hover{height: 250px;width: 255px;border: 2px solid #000;border-radius: 50%;background-color: rgba(50, 50, 50, 0.5);}
+		#onVtwo .smenu li:nth-child(2){background-image:url(images/shanghailandmark.jpg);background-position: center;background-size: 100%;background-repeat: no-repeat;position: relative;overflow:hidden;}
+		#onVtwo .smenu li>.china{width: 150px;background:#051f38;border: 2px solid #051f38;position: absolute;right: -5px;top: 50%;transform:translateY(-50%);transition:0.5s}
+		#onVtwo .smenu li>.china p{text-align: center;line-height: 50px;color: white;font-weight: bold;transition: 0.5s;}
+		#onVtwo .smenu li>.china:hover{height: 250px;width: 255px;border: 2px solid #000;border-radius: 50%;background-color: rgba(50, 50, 50, 0.5);}
+		#onVtwo .smenu li:nth-child(3){background-image:url(images/japanlandmark.jpg);background-position: center;background-size: 150%;background-repeat: no-repeat;position: relative;overflow:hidden;}
+		#onVtwo .smenu li>.japan{width: 150px;background:#051f38;border: 2px solid #051f38;position: absolute;right: -5px;top: 50%;transform:translateY(-50%);transition:0.5s}
+		#onVtwo .smenu li>.japan p{text-align: center;line-height: 50px;color: white;font-weight: bold;transition: 0.5s;}
+		#onVtwo .smenu li>.japan:hover{height: 250px;width: 255px;border: 2px solid #000;border-radius: 50%;background-color: rgba(50, 50, 50, 0.5);}
+		#onVtwo .smenu li:nth-child(4){background-image:url(images/vietnamlandmark.jpg);background-position: center;background-size: 150%;background-repeat: no-repeat;position: relative;overflow:hidden;}
+		#onVtwo .smenu li>.vietnam{width: 150px;background:#051f38;border: 2px solid #051f38;position: absolute;right: -5px;top: 50%;transform:translateY(-50%);transition:0.5s}
+		#onVtwo .smenu li>.vietnam p{text-align: center;line-height: 50px;color: white;font-weight: bold;transition: 0.5s;}
+		#onVtwo .smenu li>.vietnam:hover{height: 250px;width: 255px;border: 2px solid #000;border-radius: 50%;background-color: rgba(50, 50, 50, 0.5);}
+
+
 
 	</style>
 </head>
@@ -47,8 +102,87 @@
 		<p>All Rights Reserved.</p>
 	</nav>
 	<div id="fullpage">
-		<div class="section" id="page1" data-anchor="a1pg"></div>
-		<div class="section" id="page2" data-anchor="a2pg"></div>
+		<div class="section" id="page1" data-anchor="a1pg">
+			<div class="main" id="onVone">
+				<div class="check">
+					<ul class="clearfix">
+						<li>
+							<div class="rooms">
+								<input type="number" id="num01" placeholder="1">
+							</div>
+						</li>
+						<p>Rooms</p>
+						<li>
+							<div class="people">
+								<input type="number" id="num02" placeholder="1">
+							</div>
+						</li>
+						<p>Guests</p>
+					</ul>
+				</div>
+				<form action="#" method="get" class="formlayer">
+					<fieldset>
+						<legend>Booking</legend>
+						<ul class="clearfix">
+							<li>
+								<form action="#" method="get" class="first">
+									<input type="text" id="seachTxt" name="search" placeholder="search City, Country or Hotel" class="searchInp">
+								</form>
+							</li>
+							<li>
+								<div class="second">
+									<input type="date" id="checkin">
+								</div>
+							</li>
+							<li>
+								<div class="third">
+									<input type="date" id="checkout">
+								</div>
+							</li>
+							<li>
+								<div class="click"><a href="#"><i class="fas fa-search"></i></a></div>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="section" id="page2" data-anchor="a2pg">
+			<div class="main" id="onVtwo">
+				<div class="country">
+					<ul class="clearfix">
+						<li class="aisa"><a href="#">Asia</a></li>
+						<li><a href="#">Europe</a></li>
+						<li><a href="#">South America</a></li>
+						<li><a href="#">North America</a></li>
+					</ul>
+				</div>
+				<div class="smenu">
+					<ul class="clearfix">
+						<li>
+							<div class="korea">
+								<p>South Korea</p>
+							</div>
+						</li>
+						<li>
+							<div class="china">
+								<p>China</p>
+							</div>
+						</li>
+						<li>
+							<div class="japan">
+								<p>Japan</p>
+							</div>
+						</li>
+						<li>
+							<div class="vietnam">
+								<p>Vietnam</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="section" id="page3" data-anchor="a3pg"></div>
 		<div class="section" id="page4" data-anchor="a4pg"></div>
 	</div>
